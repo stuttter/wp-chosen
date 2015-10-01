@@ -14,11 +14,11 @@ WP Chosen plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.c
 
 ### What dropdowns does this target?
 
-`
+```
 $( '.wrap .actions:not(.bulkactions) select' ).chosen();
 $( '.wrap .form-table select' ).chosen();
 $( '#posts-filter .filter-items select' ).chosen();
-`
+```
 
 ### Where can I get support?
 
