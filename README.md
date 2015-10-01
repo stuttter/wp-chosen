@@ -1,6 +1,6 @@
 # WP Chosen
 
-WP Chosen plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
+WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
 
 [Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
