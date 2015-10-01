@@ -5,7 +5,7 @@ Requires at least: 4.3
 Tested up to: 4.3
 Stable tag: 0.1.0
 
-Make long, unwieldy select boxes much more user-friendly, in WordPress.
+Make long, unwieldy select boxes much more user-friendly.
 
 == Description ==
 
