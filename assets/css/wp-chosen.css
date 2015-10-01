@@ -1,0 +1,169 @@
+.wrap .actions:not(.bulkactions) {
+	overflow: visible;
+}
+
+.chosen-container {
+	font-size: 14px;
+	font-family: "Open Sans";
+}
+
+.chosen-container-single .chosen-single div b {
+	background-image: none;
+}
+
+.chosen-container-single .chosen-single div b:before {
+	display: block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	right: 2px;
+	top: 0px;
+	font-family: dashicons;
+	font-size: 15px;
+	content: '\f140';
+	color: #555;
+	margin-top: 1px;
+}
+
+.chosen-container-single .chosen-search input[type=text]:before {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-family: dashicons;
+	content: '\f140';	
+}
+
+.chosen-container-single .chosen-search:after {
+	display: block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	right: 9px;
+	top: 9px;
+	color: #aaa;
+	font-family: dashicons;
+	font-size: 17px;
+	content: '\f179';
+}
+
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+	border: 1px solid #ddd;
+	border-radius: 0;
+	background: #fff;
+	height: 29px;
+	padding: 2px 5px;
+}
+
+.chosen-container-single .chosen-single {
+	box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.07 );
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.chosen-container-single .chosen-single div {
+	width: 17px;
+}
+.chosen-container-single .chosen-single span {
+	margin-right: 13px;
+}
+
+.chosen-container .chosen-drop {
+	font-size: 13px;
+	position: absolute;
+	top: 100%;
+	left: -9999px;
+	z-index: 1010;
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-top: 0;
+	border-radius: 0;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.chosen-container-single .chosen-search input[type=text] {
+	margin: 1px 0;
+	padding: 4px 20px 4px 5px;
+	width: 100%;
+	height: auto;
+	outline: 0;
+	border: 1px solid #ddd;
+	border-radius: 0;
+	font-size: 13px;
+	font-family: "Open Sans";
+	line-height: normal;
+	box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.07 );
+}
+
+.chosen-container .chosen-results {
+	color: #444;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0 4px 4px 0 !important;
+	padding: 0 0 0 4px;
+	max-height: 240px;
+}
+
+.chosen-container .chosen-results li.highlighted {
+	background-image: none;
+	color: #fff;
+}
+
+/* WordPress Color Schemes */
+
+/* Fresh */
+
+.admin-color-fresh .chosen-container .chosen-results li.highlighted {
+	background-color: #0073aa;
+}
+
+/* Blue */
+.admin-color-blue .chosen-container .chosen-results li.highlighted {
+	background-color: #096484;
+}
+
+/* Coffee */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #096484;
+}
+
+/* Ectoplasm */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #a3b745;
+}
+
+/* Midnight */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #26292c;
+}
+
+/* Ocean */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #627c83;
+}
+
+/* Sunrise */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #be3631;
+}
+
+/* Light */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #888;
+}
+
+/* bbPress Color Schemes */
+
+/* Evergreen */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #36533f;
+}
+
+/* Mint */
+.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+	background-color: #4f6d59;
+}
