@@ -40,7 +40,7 @@ The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
 
 = Where can I find documentation? =
 
-http://github.com/stuttter/wp-chosen/
+http://github.com/johnjamesjacoby/wp-chosen/
 
 == Changelog ==
 
