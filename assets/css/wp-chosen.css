@@ -87,7 +87,7 @@
 .chosen-container-single .chosen-search input[type=text] {
 	margin: 1px 0;
 	padding: 4px 20px 4px 5px;
-	width: 100%;
+	width: 100% !important;
 	height: auto;
 	outline: 0;
 	border: 1px solid #ddd;
