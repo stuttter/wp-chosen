@@ -3,7 +3,7 @@ Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.3
 Tested up to: 4.3
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -43,6 +43,9 @@ The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
 http://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 0.1.1 =
+* Fix drop-down search input styling
 
 = 0.1.0 =
 * Initial release
