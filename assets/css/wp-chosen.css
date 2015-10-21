@@ -4,7 +4,7 @@
 
 .chosen-container {
 	font-size: 14px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 }
 
 .chosen-container-single .chosen-single div b {
