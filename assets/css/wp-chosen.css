@@ -1,4 +1,5 @@
-.wrap .actions:not(.bulkactions) {
+.wrap .actions:not(.bulkactions),
+.media-toolbar {
 	overflow: visible;
 }
 
