@@ -3,10 +3,10 @@
 /*
  * Plugin Name: WP Chosen
  * Plugin URI:  http://wordpress.org/extend/plugins/wp-chosen/
- * Description: Makes long, unwieldy select boxes much more user-friendly.
  * Author:      John James Jacoby
- * Version:     0.1.2
  * Author URI:  http://jjj.me
+ * Version:     0.1.3
+ * Description: Makes long, unwieldy select boxes much more user-friendly.
  * License:     GPLv2 or later
  */
 
@@ -26,8 +26,8 @@ function _wp_chosen() {
 	wp_enqueue_style( 'wp-chosen',  $url . '/assets/css/wp-chosen.css',  array( 'chosen' ), $ver );
 
 	// Scripts
-	wp_enqueue_script( 'chosen',    $url . '/assets/js/chosen.jquery.min.js', array( 'jquery'           ), false, true );
-	wp_enqueue_script( 'wp-chosen', $url . '/assets/js/wp-chosen.js',         array( 'chosen', 'jquery' ), false, true );
+	wp_enqueue_script( 'chosen',    $url . '/assets/js/chosen.jquery.min.js', array( 'jquery'           ), $ver, true );
+	wp_enqueue_script( 'wp-chosen', $url . '/assets/js/wp-chosen.js',         array( 'chosen', 'jquery' ), $ver, true );
 }
 add_action( 'admin_enqueue_scripts', '_wp_chosen' );
 
@@ -50,5 +50,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 201510210001;
+	return 201510280001;
 }
