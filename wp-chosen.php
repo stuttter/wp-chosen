@@ -22,12 +22,12 @@ function _wp_chosen() {
 	$ver = wp_chosen_get_asset_version();
 
 	// Styles
-	wp_enqueue_style( 'chosen',     $url . '/assets/css/chosen.min.css', array(),           $ver );
-	wp_enqueue_style( 'wp-chosen',  $url . '/assets/css/wp-chosen.css',  array( 'chosen' ), $ver );
+	wp_enqueue_style( 'chosen',     $url . 'assets/css/chosen.min.css', array(),           $ver );
+	wp_enqueue_style( 'wp-chosen',  $url . 'assets/css/wp-chosen.css',  array( 'chosen' ), $ver );
 
 	// Scripts
-	wp_enqueue_script( 'chosen',    $url . '/assets/js/chosen.jquery.min.js', array( 'jquery'           ), $ver, true );
-	wp_enqueue_script( 'wp-chosen', $url . '/assets/js/wp-chosen.js',         array( 'chosen', 'jquery' ), $ver, true );
+	wp_enqueue_script( 'chosen',    $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'           ), $ver, true );
+	wp_enqueue_script( 'wp-chosen', $url . 'assets/js/wp-chosen.js',         array( 'chosen', 'jquery' ), $ver, true );
 }
 add_action( 'admin_enqueue_scripts', '_wp_chosen' );
 
