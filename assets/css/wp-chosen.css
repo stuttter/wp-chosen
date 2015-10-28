@@ -3,6 +3,10 @@
 	overflow: visible;
 }
 
+.media-frame.mode-grid .chosen-container-single {
+	margin: 0 2px;
+}
+
 .chosen-container {
 	font-size: 14px;
 	font-family: "Open Sans", sans-serif;
