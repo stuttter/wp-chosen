@@ -7,6 +7,10 @@
 	margin: 0 4px 0 0;
 }
 
+#customize-theme-controls .chosen-container {
+	width: 100% !important;
+}
+
 .chosen-container {
 	font-size: 14px;
 	font-family: "Open Sans", sans-serif;
