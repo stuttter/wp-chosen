@@ -1,14 +1,14 @@
 jQuery( document ).ready( function ( $ ) {
 
-	/* Targets */
-	$( '.wrap .actions:not(.bulkactions) select' ).chosen();
-	$( '.wrap .form-table select' ).chosen();
-	$( '#posts-filter .filter-items select' ).chosen();
-	$( '.media-toolbar select' ).chosen();
-	$( '#customize-theme-controls select' ).chosen();
-
 	/* Options */
-	$( '.chosen-select' ).chosen( {
+	var chosen_options = {
 		disable_search_threshold: 10
-	} );
+	};
+
+	/* Targets */
+	$( '.wrap .actions:not(.bulkactions) select' ).chosen( chosen_options );
+	$( '.wrap .form-table select' ).chosen( chosen_options );
+	$( '#posts-filter .filter-items select' ).chosen( chosen_options );
+	$( '.media-toolbar select' ).chosen( chosen_options );
+	$( '#customize-theme-controls select' ).chosen( chosen_options );
 } );
