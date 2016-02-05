@@ -8,7 +8,7 @@ jQuery( document ).ready( function ( $ ) {
 	$( '#customize-theme-controls select' ).chosen();
 
 	/* Options */
-	$(".chosen-select").chosen( {
+	$( '.chosen-select' ).chosen( {
 		disable_search_threshold: 10
 	} );
 } );
