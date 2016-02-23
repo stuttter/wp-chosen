@@ -3,7 +3,7 @@ Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.4
 Tested up to: 4.4
-Stable tag: 0.2.1
+Stable tag: 0.3.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
@@ -60,6 +60,10 @@ The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
 http://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 0.3.0 =
+* Bump Chosen to 1.5.1
+* Rename enqueue ID to 'jquery-chosen'
 
 = 0.2.1 =
 * Only search when there are more than 10 items

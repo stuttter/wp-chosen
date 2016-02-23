@@ -5,7 +5,7 @@
  * Plugin URI:  http://wordpress.org/plugins/wp-chosen/
  * Author:      John James Jacoby
  * Author URI:  http://jjj.me
- * Version:     0.2.1
+ * Version:     0.3.0
  * Description: Makes long, unwieldy select boxes much more user-friendly.
  * License:     GPLv2 or later
  */
@@ -22,14 +22,14 @@ function _wp_chosen() {
 	$ver = wp_chosen_get_asset_version();
 
 	// Styles
-	wp_enqueue_style( 'chosen',     $url . 'assets/css/chosen.min.css', array(),           $ver );
-	wp_enqueue_style( 'wp-chosen',  $url . 'assets/css/wp-chosen.css',  array( 'chosen' ), $ver );
+	wp_enqueue_style( 'jquery-chosen', $url . 'assets/css/chosen.min.css', array(),                  $ver );
+	wp_enqueue_style( 'wp-chosen',     $url . 'assets/css/wp-chosen.css',  array( 'jquery-chosen' ), $ver );
 
 	// Scripts
-	wp_enqueue_script( 'chosen',    $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'           ), $ver, true );
-	wp_enqueue_script( 'wp-chosen', $url . 'assets/js/wp-chosen.js',         array( 'chosen', 'jquery' ), $ver, true );
+	wp_enqueue_script( 'jquery-chosen', $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'                  ), $ver, true );
+	wp_enqueue_script( 'wp-chosen',     $url . 'assets/js/wp-chosen.js',         array( 'jquery', 'jquery-chosen' ), $ver, true );
 }
-add_action( 'admin_enqueue_scripts', '_wp_chosen' );
+add_action( 'admin_enqueue_scripts', '_wp_chosen', -99 );
 
 /**
  * Return the plugin's URL
@@ -50,5 +50,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 201602050003;
+	return 201602230001;
 }
