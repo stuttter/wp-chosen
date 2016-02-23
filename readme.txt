@@ -2,15 +2,15 @@
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.4
-Tested up to: 4.4
-Stable tag: 0.3.0
+Tested up to: 4.5
+Stable tag: 0.3.1
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
 
 == Description ==
 
-WP Chosen plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
+WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
 
 [Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
@@ -31,7 +31,7 @@ WP Chosen plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.c
 == Screenshots ==
 
 1. Filters
-2. Timezones
+2. Time Zones
 
 == Installation ==
 
@@ -41,7 +41,7 @@ WP Chosen plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.c
 
 == Frequently Asked Questions ==
 
-= What dropdowns does this target? =
+= What elements does this target? =
 
 `
 $( '.wrap .actions:not(.bulkactions) select' ).chosen();
@@ -60,6 +60,9 @@ The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
 http://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 0.3.1 =
+* Simplify dependency tree
 
 = 0.3.0 =
 * Bump Chosen to 1.5.1
