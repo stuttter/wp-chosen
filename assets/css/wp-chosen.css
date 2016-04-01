@@ -3,6 +3,10 @@
 	overflow: visible;
 }
 
+.tablenav .actions {
+	overflow: visible; /* Core override */
+}
+
 .media-frame.mode-grid .chosen-container-single {
 	margin: 0 4px 0 0;
 }
