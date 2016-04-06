@@ -27,6 +27,10 @@ function wp_chosen_enqueue_assets() {
 	// Scripts
 	wp_enqueue_script( 'jquery-chosen', $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'        ), $ver, true );
 	wp_enqueue_script( 'wp-chosen',     $url . 'assets/js/wp-chosen.js',         array( 'jquery-chosen' ), $ver, true );
+
+	// Try to handle conflicts
+	wp_deregister_script( 'chosen' );
+	wp_deregister_style( 'chosen' );
 }
 
 /**
