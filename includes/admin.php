@@ -16,17 +16,24 @@ defined( 'ABSPATH' ) || exit;
  */
 function wp_chosen_enqueue_assets() {
 
+	/*
+	 * Filterable handle to help purposely avoid conflicts
+	 *
+	 * @since 0.6.0
+	 */
+	$handle = apply_filters( 'wp_chosen_enqueue_handle', 'jquery-chosen' );
+
 	// Vars
 	$url = wp_chosen_get_plugin_url();
 	$ver = wp_chosen_get_asset_version();
 
 	// Styles
-	wp_enqueue_style( 'jquery-chosen', $url . 'assets/css/chosen.min.css', array(),                  $ver );
-	wp_enqueue_style( 'wp-chosen',     $url . 'assets/css/wp-chosen.css',  array( 'jquery-chosen' ), $ver );
+	wp_enqueue_style( $handle,     $url . 'assets/css/chosen.min.css', array(),          $ver );
+	wp_enqueue_style( 'wp-chosen', $url . 'assets/css/wp-chosen.css',  array( $handle ), $ver );
 
 	// Scripts
-	wp_enqueue_script( 'jquery-chosen', $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'        ), $ver, true );
-	wp_enqueue_script( 'wp-chosen',     $url . 'assets/js/wp-chosen.js',         array( 'jquery-chosen' ), $ver, true );
+	wp_enqueue_script( $handle,     $url . 'assets/js/chosen.jquery.min.js', array( 'jquery' ), $ver, true );
+	wp_enqueue_script( 'wp-chosen', $url . 'assets/js/wp-chosen.js',         array( $handle  ), $ver, true );
 }
 
 /**
