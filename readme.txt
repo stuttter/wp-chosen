@@ -1,7 +1,7 @@
 === WP Chosen ===
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
-Requires at least: 4.4
+Requires at least: 4.5
 Tested up to: 4.5
 Stable tag: 0.6.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J

@@ -45,5 +45,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 201604060005;
+	return 201604160005;
 }
