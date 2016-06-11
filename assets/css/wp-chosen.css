@@ -213,38 +213,38 @@ only screen and ( min-resolution: 1.5dppx ) {
 }
 
 /* Ectoplasm */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-ectoplasm .chosen-container .chosen-results li.highlighted {
 	background-color: #a3b745;
 }
 
 /* Midnight */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-midnight .chosen-container .chosen-results li.highlighted {
 	background-color: #26292c;
 }
 
 /* Ocean */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-ocean .chosen-container .chosen-results li.highlighted {
 	background-color: #627c83;
 }
 
 /* Sunrise */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-sunrise .chosen-container .chosen-results li.highlighted {
 	background-color: #be3631;
 }
 
 /* Light */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-light .chosen-container .chosen-results li.highlighted {
 	background-color: #888;
 }
 
 /* bbPress Color Schemes */
 
 /* Evergreen */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-evergreen .chosen-container .chosen-results li.highlighted {
 	background-color: #36533f;
 }
 
 /* Mint */
-.admin-color-coffee .chosen-container .chosen-results li.highlighted {
+.admin-color-mint .chosen-container .chosen-results li.highlighted {
 	background-color: #4f6d59;
 }
