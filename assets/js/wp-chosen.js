@@ -11,4 +11,11 @@ jQuery( document ).ready( function ( $ ) {
 	$( '.wrap .actions select' ).chosen( chosen_options );
 	$( '#customize-theme-controls select' ).chosen( chosen_options );
 	$( '#posts-filter .filter-items select' ).chosen( chosen_options );
+
+	/* Meta Box Toggle */
+	$( document ).on( 'postbox-toggled', function( event, postbox ) {
+		$( postbox ).find( 'select' )
+			.chosen( 'destroy' )
+			.chosen( chosen_options );
+	} );
 } );
