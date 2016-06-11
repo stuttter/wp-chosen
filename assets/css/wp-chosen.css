@@ -1,10 +1,10 @@
 .wrap .actions:not(.bulkactions),
 .media-toolbar {
-	overflow: visible;
+	overflow: visible !important;
 }
 
 .tablenav .actions {
-	overflow: visible; /* Core override */
+	overflow: visible !important; /* Core override */
 }
 
 .media-frame.mode-grid .chosen-container-single {
