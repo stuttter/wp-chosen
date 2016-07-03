@@ -2,7 +2,8 @@ jQuery( document ).ready( function ( $ ) {
 
 	/* Options */
 	var chosen_options = {
-		disable_search_threshold: 13
+		disable_search_threshold: 13,
+		search_contains: true
 	};
 
 	/* Targets */
