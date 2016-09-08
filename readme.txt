@@ -2,8 +2,8 @@
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.6
-Tested up to: 4.6
-Stable tag: 0.7.0
+Tested up to: 4.7
+Stable tag: 1.0.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
@@ -60,6 +60,9 @@ The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
 http://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 1.0.0 =
+* First pass outline styling support for improved accessibility
 
 = 0.7.0 =
 * Target `form-wrap` select elements, for taxonomies and such

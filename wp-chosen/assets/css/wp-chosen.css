@@ -68,6 +68,11 @@
 	background: #fff;
 	height: 29px;
 	padding: 2px 5px;
+	outline: none;
+}
+
+.chosen-container-active .chosen-single {
+	outline: auto 5px -webkit-focus-ring-color;
 }
 
 .chosen-container-multi .chosen-choices li.search-field input[type=text] {
