@@ -20,4 +20,9 @@ jQuery( document ).ready( function ( $ ) {
 			.chosen( 'destroy' )
 			.chosen( chosen_options );
 	} );
+
+	/* Display Name */
+	$( '#first_name, #last_name, #nickname' ).on( 'blur', function() {
+		$( '#display_name' ).trigger( 'chosen:updated' );
+	} );
 } );
