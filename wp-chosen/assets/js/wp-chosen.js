@@ -7,12 +7,15 @@ jQuery( document ).ready( function ( $ ) {
 	};
 
 	/* Targets */
-	$( '.media-toolbar select' ).chosen( chosen_options );
-	$( '.wrap .form-table select' ).chosen( chosen_options );
-	$( '.wrap .form-wrap select' ).chosen( chosen_options );
-	$( '.wrap .actions select' ).chosen( chosen_options );
-	$( '#customize-theme-controls select' ).chosen( chosen_options );
-	$( '#posts-filter .filter-items select' ).chosen( chosen_options );
+	var chosen_targets =
+		'.media-toolbar select'
+		+ ', .form-table select'
+		+ ', .form-wrap select'
+		+ ', .customize-pane-parent select'
+		+ ', #posts-filter select';
+
+	/* Attach */
+	$( chosen_targets ).chosen( chosen_options );
 
 	/* Meta Box Toggle */
 	$( document ).on( 'postbox-toggled', function( event, postbox ) {
