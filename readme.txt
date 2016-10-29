@@ -67,7 +67,7 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 
 = Where can I find documentation? =
 
-http://github.com/stuttter/wp-chosen/
+https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
 
