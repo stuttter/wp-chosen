@@ -15,16 +15,26 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 ### What dropdowns does this target?
 
 ```
-$( '.wrap .actions:not(.bulkactions) select' ).chosen();
-$( '.wrap .form-table select' ).chosen();
-$( '#posts-filter .filter-items select' ).chosen();
-$( '.media-toolbar select' ).chosen();
-$( '#customize-theme-controls select' ).chosen();
+	/* Options */
+	var chosen_options = {
+		disable_search_threshold: 13,
+		search_contains: true
+	};
+
+	/* Targets */
+	var chosen_targets =
+		'.media-toolbar select'
+		+ ', .bulkactions select'
+		+ ', .form-table select'
+		+ ', .form-wrap select'
+		+ ', .customize-pane-parent select'
+		+ ', #posts-filter select';
 ```
 
 ### Where can I get support?
 
-The WordPress support forums: https://wordpress.org/plugin/support/wp-chosen/
+* Basic: https://wordpress.org/support/plugin/wp-chosen/
+* Priority: https://chat.flox.io/support/channels/wp-chosen/
 
 ### Can I contribute?
 

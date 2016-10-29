@@ -44,22 +44,35 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 = What elements does this target? =
 
 `
-$( '.wrap .actions:not(.bulkactions) select' ).chosen();
-$( '.wrap .form-table select' ).chosen();
-$( '#posts-filter .filter-items select' ).chosen();
-$( '.media-toolbar select' ).chosen();
-$( '#customize-theme-controls select' ).chosen();
+	/* Options */
+	var chosen_options = {
+		disable_search_threshold: 13,
+		search_contains: true
+	};
+
+	/* Targets */
+	var chosen_targets =
+		'.media-toolbar select'
+		+ ', .bulkactions select'
+		+ ', .form-table select'
+		+ ', .form-wrap select'
+		+ ', .customize-pane-parent select'
+		+ ', #posts-filter select';
 `
 
 = Where can I get support? =
 
-The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
+* Basic: https://wordpress.org/support/plugin/wp-chosen/
+* Priority: https://chat.flox.io/support/channels/wp-chosen/
 
 = Where can I find documentation? =
 
 http://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 2.0.0 - 2016/10/29 =
+* Remove "Open Sans" font styling rules for WordPress 4.6 support
 
 = 1.1.0 - 2016/09/10 =
 * Remove "Open Sans" font styling rules for WordPress 4.6 support
