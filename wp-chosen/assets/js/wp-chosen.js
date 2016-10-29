@@ -9,6 +9,7 @@ jQuery( document ).ready( function ( $ ) {
 	/* Targets */
 	var chosen_targets =
 		'.media-toolbar select'
+		+ ', .bulkactions select'
 		+ ', .form-table select'
 		+ ', .form-wrap select'
 		+ ', .customize-pane-parent select'
