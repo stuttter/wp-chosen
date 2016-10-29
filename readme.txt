@@ -3,7 +3,7 @@ Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.6
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 2.0.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
