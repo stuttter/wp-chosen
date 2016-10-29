@@ -72,7 +72,8 @@ http://github.com/stuttter/wp-chosen/
 == Changelog ==
 
 = 2.0.0 - 2016/10/29 =
-* Remove "Open Sans" font styling rules for WordPress 4.6 support
+* Target bulk-actions
+* Improve efficiency of element targeting
 
 = 1.1.0 - 2016/09/10 =
 * Remove "Open Sans" font styling rules for WordPress 4.6 support
