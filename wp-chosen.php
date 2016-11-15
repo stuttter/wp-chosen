@@ -4,7 +4,7 @@
  * Plugin Name: WP Chosen
  * Plugin URI:  http://wordpress.org/plugins/wp-chosen/
  * Author:      John James Jacoby
- * Author URI:  http://jjj.me
+ * Author URI:  https://jjj.blog
  * Version:     2.0.0
  * Description: Makes long, unwieldy select boxes much more user-friendly.
  * License:     GPLv2 or later
