@@ -52,8 +52,10 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 
 	/* Targets */
 	var chosen_targets =
-		'.media-toolbar select'
-		+ ', .bulkactions select'
+		'.wp-pretty-filters select'
+		+ ', .wp-filter select'
+		+ ', .media-toolbar select'
+		+ ', .tablenav select'
 		+ ', .form-table select'
 		+ ', .form-wrap select'
 		+ ', .customize-pane-parent select'
@@ -70,6 +72,11 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 2.1.0 - 2016/11/19 =
+* Target more actions
+* Target wp-filters
+* Add WP Pretty Filters support
 
 = 2.0.0 - 2016/10/29 =
 * Target bulk-actions

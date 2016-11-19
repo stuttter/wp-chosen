@@ -8,8 +8,10 @@ jQuery( document ).ready( function ( $ ) {
 
 	/* Targets */
 	var chosen_targets =
-		'.media-toolbar select'
-		+ ', .bulkactions select'
+		'.wp-pretty-filters select'
+		+ ', .wp-filter select'
+		+ ', .media-toolbar select'
+		+ ', .tablenav select'
 		+ ', .form-table select'
 		+ ', .form-wrap select'
 		+ ', .customize-pane-parent select'
