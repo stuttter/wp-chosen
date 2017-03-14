@@ -15,7 +15,8 @@ jQuery( document ).ready( function ( $ ) {
 		+ ', .form-table select'
 		+ ', .form-wrap select'
 		+ ', .customize-pane-parent select'
-		+ ', #posts-filter select';
+		+ ', form#posts-filter select'
+		+ ', form#post select';
 
 	/* Attach */
 	$( chosen_targets ).chosen( chosen_options );
