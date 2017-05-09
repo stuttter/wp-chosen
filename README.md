@@ -23,12 +23,14 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 
 	/* Targets */
 	var chosen_targets =
-		'.media-toolbar select'
-		+ ', .bulkactions select'
+		'.wp-pretty-filters select'
+		+ ', .wp-filter select'
+		+ ', .media-toolbar select'
+		+ ', .postbox .inside select'
+		+ ', .tablenav select'
 		+ ', .form-table select'
 		+ ', .form-wrap select'
-		+ ', .customize-pane-parent select'
-		+ ', #posts-filter select';
+		+ ', .customize-pane-parent select';
 ```
 
 ### Where can I get support?

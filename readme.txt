@@ -2,8 +2,8 @@
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.6
-Tested up to: 4.7
-Stable tag: 2.0.0
+Tested up to: 4.8
+Stable tag: 3.0.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
@@ -55,11 +55,11 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 		'.wp-pretty-filters select'
 		+ ', .wp-filter select'
 		+ ', .media-toolbar select'
+		+ ', .postbox .inside select'
 		+ ', .tablenav select'
 		+ ', .form-table select'
 		+ ', .form-wrap select'
-		+ ', .customize-pane-parent select'
-		+ ', #posts-filter select';
+		+ ', .customize-pane-parent select';
 `
 
 = Where can I get support? =
@@ -72,6 +72,12 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 3.0.0 - 2017/05/09 =
+* Update Chosen to 1.7.0
+* Handle several special cases for known wp-admin quirks
+* Add target for `.postbox .inside select`
+* Remove duplicate target for `#posts-filter select`
 
 = 2.1.0 - 2016/11/19 =
 * Target more actions
