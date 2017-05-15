@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Chosen Adminu
+ * Chosen Admin
  *
  * @package Plugins/Chosen/Admin
  */
