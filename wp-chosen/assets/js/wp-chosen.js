@@ -37,10 +37,13 @@ jQuery( document ).ready( function ( $ ) {
 
 	/* Special case the "Publish" meta box "Edit" links */
 	$( '.misc-pub-section a' ).on( 'click', function() {
-		$( this ).next( 'div, fieldset' )
-			.find( 'select' )
-				.chosen( 'destroy' )
-				.chosen( chosen_options );
+		var $this = $( this );
+		setTimeout( function() {
+			$this.next( 'div, fieldset' )
+				.find( 'select' )
+					.chosen( 'destroy' )
+					.chosen( chosen_options );
+		}, 250);
 	} );
 
 	/* Special case the "Publish" meta box "Edit" links */
