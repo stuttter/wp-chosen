@@ -5,7 +5,7 @@
  * Plugin URI:  http://wordpress.org/plugins/wp-chosen/
  * Author:      John James Jacoby
  * Author URI:  https://jjj.blog
- * Version:     3.0.0
+ * Version:     3.1.0
  * Description: Makes long, unwieldy select boxes much more user-friendly.
  * License:     GPLv2 or later
  */
@@ -27,7 +27,7 @@ function _wp_chosen() {
 add_action( 'plugins_loaded', '_wp_chosen' );
 
 /**
- * Return the plugin's URL
+ * Return the plugin URL
  *
  * @since 0.1.0
  *
@@ -45,5 +45,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 201705090001;
+	return 201706220002;
 }

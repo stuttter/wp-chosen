@@ -2,8 +2,8 @@
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 4.6
-Tested up to: 4.8
-Stable tag: 3.0.0
+Tested up to: 4.9
+Stable tag: 3.1.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
 
 Make long, unwieldy select boxes much more user-friendly.
@@ -51,15 +51,16 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 	};
 
 	/* Targets */
-	var chosen_targets =
-		'.wp-pretty-filters select'
-		+ ', .wp-filter select'
-		+ ', .media-toolbar select'
-		+ ', .postbox .inside select'
-		+ ', .tablenav select'
-		+ ', .form-table select'
-		+ ', .form-wrap select'
-		+ ', .customize-pane-parent select';
+	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+		chosen_targets =
+		'.wp-pretty-filters'         + chosen_selects
+		+ ', .wp-filter'             + chosen_selects
+		+ ', .media-toolbar'         + chosen_selects
+		+ ', .postbox .inside'       + chosen_selects
+		+ ', .tablenav'              + chosen_selects
+		+ ', .form-table'            + chosen_selects
+		+ ', .form-wrap'             + chosen_selects
+		+ ', .customize-pane-parent' + chosen_selects;
 `
 
 = Where can I get support? =
@@ -72,6 +73,11 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 3.1.0 - 2017/06/22 =
+* Avoid conflicts with EasyDigitalDownloads
+* Avoid conflicts with Stream
+* Avoid conflicts with Select2
 
 = 3.0.0 - 2017/05/09 =
 * Update Chosen to 1.7.0

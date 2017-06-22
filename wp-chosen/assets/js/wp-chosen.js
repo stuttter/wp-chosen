@@ -7,54 +7,55 @@ jQuery( document ).ready( function ( $ ) {
 	};
 
 	/* Targets */
-	var chosen_targets =
-		'.wp-pretty-filters select'
-		+ ', .wp-filter select'
-		+ ', .media-toolbar select'
-		+ ', .postbox .inside select'
-		+ ', .tablenav select'
-		+ ', .form-table select'
-		+ ', .form-wrap select'
-		+ ', .customize-pane-parent select';
+	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+		chosen_targets =
+		'.wp-pretty-filters'         + chosen_selects
+		+ ', .wp-filter'             + chosen_selects
+		+ ', .media-toolbar'         + chosen_selects
+		+ ', .postbox .inside'       + chosen_selects
+		+ ', .tablenav'              + chosen_selects
+		+ ', .form-table'            + chosen_selects
+		+ ', .form-wrap'             + chosen_selects
+		+ ', .customize-pane-parent' + chosen_selects;
 
 	/* Attach */
 	$( chosen_targets ).chosen( chosen_options );
 
 	/* Special case the Meta-Box toggle */
 	$( document ).on( 'postbox-toggled', function( event, postbox ) {
-		$( postbox ).find( 'select' )
-			.chosen( 'destroy' )
-			.chosen( chosen_options );
+		wpChosenDelayedRefresh( $( postbox ).find( chosen_selects ) );
 	} );
 
 	/* Special case the "+ Add New Category" link */
 	$( '.taxonomy-add-new' ).on( 'click', function() {
-		$( this ).next()
-			.find( 'select.postform' )
-				.chosen( 'destroy' )
-				.chosen( chosen_options );
+		wpChosenDelayedRefresh( $( this ).next().find( 'select.postform' ) );
 	} );
 
 	/* Special case the "Publish" meta box "Edit" links */
 	$( '.misc-pub-section a' ).on( 'click', function() {
-		var $this = $( this );
-		setTimeout( function() {
-			$this.next( 'div, fieldset' )
-				.find( 'select' )
-					.chosen( 'destroy' )
-					.chosen( chosen_options );
-		}, 250);
+		wpChosenDelayedRefresh( $( this ).next( 'div, fieldset' ).find( chosen_selects ), 250 );
 	} );
 
 	/* Special case the "Publish" meta box "Edit" links */
 	$( document ).on( 'bp-xprofile-show-options', function( e, forWhat ) {
-		$( '#' + forWhat ).find( 'select' )
-			.chosen( 'destroy' )
-			.chosen( chosen_options );
+		wpChosenDelayedRefresh( $( '#' + forWhat ).find( chosen_selects ) );
 	} );
 
 	/* Special case the "Display Name" magic */
 	$( '#first_name, #last_name, #nickname' ).on( 'blur', function() {
 		$( '#display_name' ).trigger( 'chosen:updated' );
 	} );
+
+	/**
+	 * Delay a chosen refresh, for elements, for some time
+	 *
+	 * @param {elements} elements
+	 * @param {integer} time
+	 * @returns {void}
+	 */
+	function wpChosenDelayedRefresh( elements, time = 10 ) {
+		setTimeout( function() {
+			elements.chosen( 'destroy' ).chosen( chosen_options );
+		}, time );
+	}
 } );

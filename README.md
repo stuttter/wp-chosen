@@ -22,15 +22,16 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 	};
 
 	/* Targets */
-	var chosen_targets =
-		'.wp-pretty-filters select'
-		+ ', .wp-filter select'
-		+ ', .media-toolbar select'
-		+ ', .postbox .inside select'
-		+ ', .tablenav select'
-		+ ', .form-table select'
-		+ ', .form-wrap select'
-		+ ', .customize-pane-parent select';
+	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+		chosen_targets =
+		'.wp-pretty-filters'         + chosen_selects
+		+ ', .wp-filter'             + chosen_selects
+		+ ', .media-toolbar'         + chosen_selects
+		+ ', .postbox .inside'       + chosen_selects
+		+ ', .tablenav'              + chosen_selects
+		+ ', .form-table'            + chosen_selects
+		+ ', .form-wrap'             + chosen_selects
+		+ ', .customize-pane-parent' + chosen_selects;
 ```
 
 ### Where can I get support?
