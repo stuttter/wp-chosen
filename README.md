@@ -37,7 +37,6 @@ WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chos
 ### Where can I get support?
 
 * Basic: https://wordpress.org/support/plugin/wp-chosen/
-* Priority: https://chat.flox.io/support/channels/wp-chosen/
 
 ### Can I contribute?
 
