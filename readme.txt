@@ -10,9 +10,9 @@ Make long, unwieldy select boxes much more user-friendly.
 
 == Description ==
 
-WP Chosen implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
+WP Chosen implements the [Chosen jQuery Plugin](https://harvesthq.github.io/chosen/) for WordPress.
 
-[Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly.
+[Chosen](https://harvesthq.github.io/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
 = Also checkout =
 
