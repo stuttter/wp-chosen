@@ -2,7 +2,7 @@
 
 /*
  * Plugin Name: WP Chosen
- * Plugin URI:  http://wordpress.org/plugins/wp-chosen/
+ * Plugin URI:  https://wordpress.org/plugins/wp-chosen/
  * Author:      John James Jacoby
  * Author URI:  https://jjj.blog
  * Version:     3.2.0
