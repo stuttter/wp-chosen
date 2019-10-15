@@ -122,7 +122,7 @@ body.js div.chosen-container {
 	width: 20px;
 }
 .chosen-container-single .chosen-single span {
-	margin-right: 20px;
+	margin-right: 18px;
 }
 
 .chosen-container .chosen-drop {
@@ -326,13 +326,13 @@ body.js div.chosen-container {
 body.branch-5-3 .chosen-container-multi .chosen-choices,
 body.branch-5-3 .chosen-container-single .chosen-single,
 body.branch-5-3 .chosen-container-active .chosen-single {
-	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 4px top 50%;
+	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 50%;
 	background-size: 16px 16px;
 	border-radius: 3px;
 	border: 1px solid #7e8993;
 	box-shadow: 0 0 0 transparent;
 	color: #32373c;
-	padding: 1px 5px;
+	padding: 1px 7px;
 }
 
 body.branch-5-3 .chosen-container-active .chosen-single {
