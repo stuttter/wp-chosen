@@ -149,7 +149,6 @@ body.js div.chosen-container {
 	border-color: transparent;
 	background: #fff;
 	outline: 2px solid transparent;
-	margin-bottom: 20px;
 }
 
 .chosen-container-single .chosen-search input[type=text] {
