@@ -9,7 +9,7 @@ body.js select {
 }
 
 body.js div.chosen-container {
-	min-width: 55px;
+	min-width: 58px;
 	max-width: 300px;
 }
 
@@ -28,6 +28,7 @@ body.js div.chosen-container {
 	font-size: 13px;
 	vertical-align: middle;
 	padding-top: 1px;
+	margin: 0 1px;
 }
 
 /* This stinks */
@@ -275,6 +276,31 @@ body.js div.chosen-container {
 		font-size: 16px;
 		line-height: 16px;
 	}
+}
+
+/* Scroll bars
+-------------------------------------------------------------- */
+
+/* width */
+.chosen-container-single .chosen-results::-webkit-scrollbar {
+	width: 8px;
+	margin-left: 5px;
+}
+
+/* Track */
+.chosen-container-single .chosen-results::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+/* Handle */
+.chosen-container-single .chosen-results::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.chosen-container-single .chosen-results::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
 }
 
 /* WordPress Color Schemes
