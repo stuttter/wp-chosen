@@ -1,14 +1,19 @@
 <?php
 
 /*
- * Plugin Name: WP Chosen
- * Plugin URI:  https://wordpress.org/plugins/wp-chosen/
- * Author:      John James Jacoby
- * Author URI:  https://jjj.blog
- * Version:     3.2.0
- * Description: Makes long, unwieldy select boxes much more user-friendly.
- * License:     GPLv2 or later
+ * Plugin Name:       WP Chosen
+ * Plugin URI:        https://wordpress.org/plugins/wp-chosen/
+ * Author:            John James Jacoby
+ * Author URI:        https://jjj.blog
+ * Version:           4.0.0
+ * Requires at least: 5.3
+ * Requires PHP:      7.0
+ * Description:       Makes unwieldy select boxes more user-friendly
+ * License:           GPLv2 or later
  */
+
+// Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Enqueue chosen
@@ -45,5 +50,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 201910150001;
+	return 202003090001;
 }
