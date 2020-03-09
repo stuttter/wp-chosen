@@ -81,7 +81,7 @@ body.js div.chosen-container {
 .chosen-container-active.chosen-with-drop .chosen-single {
 	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 50%;
 	background-size: 16px 16px;
-	border-radius: 3px;
+	border-radius: 4px;
 	border: 1px solid #7e8993;
 	box-shadow: 0 0 0 transparent;
 	color: #32373c;
@@ -94,7 +94,7 @@ body.js div.chosen-container {
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
-	border-radius: 3px 3px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 
 .chosen-container-active .chosen-single {
@@ -144,7 +144,7 @@ body.js div.chosen-container {
 	top: 100%;
 	z-index: 1010;
 	width: 100%;
-	border-radius: 0 0 3px 3px;
+	border-radius: 0 0 4px 4px;
 	border-width: 0 1px 0 1px;
 	border-color: transparent;
 	background: #fff;
@@ -161,7 +161,7 @@ body.js div.chosen-container {
 	font-size: 13px;
 	line-height: normal;
 	border: 1px solid #ddd;
-	border-radius: 3px;
+	border-radius: 4px;
 	box-shadow: none;
 }
 
@@ -373,7 +373,7 @@ body.admin-color-fresh .chosen-container .chosen-drop {
 }
 body.admin-color-fresh .chosen-container .chosen-results li.highlighted {
 	background-color: #007cba;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 /* Blue */
