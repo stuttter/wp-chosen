@@ -1,4 +1,4 @@
-/* Chosen styles
+/* WP Chosen
 -------------------------------------------------------------- */
 
 body.js select {
@@ -25,7 +25,7 @@ body.js div.chosen-container {
 }
 
 .chosen-container {
-	font-size: 13px;
+	font-size: 14px;
 	vertical-align: middle;
 	padding-top: 1px;
 	margin: 0 1px;
@@ -34,7 +34,6 @@ body.js div.chosen-container {
 /* This stinks */
 .form-table .chosen-container {
 	padding-top: 0;
-	font-size: 14px;
 }
 
 .chosen-container-single .chosen-single div b {
@@ -88,6 +87,10 @@ body.js div.chosen-container {
 	padding: 1px 7px;
 }
 
+.chosen-container-single .chosen-default {
+	color: #a0a5aa;
+}
+
 .chosen-container-single .chosen-single,
 .chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single {
 	min-height: 28px;
@@ -100,12 +103,6 @@ body.js div.chosen-container {
 .chosen-container-active .chosen-single {
 	border-color: transparent;
 	outline: 2px solid transparent;
-}
-
-.chosen-container:hover .chosen-drop,
-.chosen-container:hover .chosen-choices,
-.chosen-container:hover .chosen-single {
-	color: #007cba;
 }
 
 .chosen-container-multi .chosen-choices li.search-field {
@@ -245,7 +242,7 @@ body.js div.chosen-container {
 }
 
 .chosen-container-single .chosen-single abbr:hover {
-	color: #555;
+	color: #dc3232;
 }
 
 /* Force on all screen sizes & resolutions */
@@ -283,7 +280,6 @@ body.js div.chosen-container {
 /* width */
 .chosen-container-single .chosen-results::-webkit-scrollbar {
 	width: 8px;
-	margin-left: 5px;
 }
 
 /* Track */
@@ -294,7 +290,7 @@ body.js div.chosen-container {
 /* Handle */
 .chosen-container-single .chosen-results::-webkit-scrollbar-thumb {
 	background: #ddd;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 
 /* Handle on hover */
