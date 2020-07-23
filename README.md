@@ -1,8 +1,8 @@
 # WP Chosen
 
-WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.com/chosen/) for WordPress.
+WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.io/chosen/) for WordPress.
 
-[Chosen](http://jjj.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly.
+[Chosen](http://jjj.github.io/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
 # Installation
 
