@@ -5,7 +5,7 @@
  * Plugin URI:        https://wordpress.org/plugins/wp-chosen/
  * Author:            John James Jacoby
  * Author URI:        https://jjj.blog
- * Version:           4.0.0
+ * Version:           5.0.0
  * Requires at least: 5.3
  * Requires PHP:      7.0
  * Description:       Makes unwieldy select boxes more user-friendly
@@ -50,5 +50,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 202003090001;
+	return 20200723001;
 }
