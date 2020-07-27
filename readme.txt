@@ -4,15 +4,15 @@ Tags: jquery, select, chosen
 Donate link: https://wordpressfoundation.org/donate/
 Requires at least: 5.0
 Tested up to: 5.5
-Stable tag: 5.0.0
+Stable tag: 5.0.1
 
 Make long, unwieldy select boxes much more user-friendly.
 
 == Description ==
 
-WP Chosen implements the [Chosen jQuery Plugin](https://harvesthq.github.io/chosen/) for WordPress.
+WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) for WordPress.
 
-[Chosen](https://harvesthq.github.io/chosen/) makes long, unwieldy select boxes much more user-friendly.
+[Chosen](https://jjj.github.io/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
 = Also checkout =
 
@@ -63,14 +63,16 @@ WP Chosen implements the [Chosen jQuery Plugin](https://harvesthq.github.io/chos
 
 = Where can I get support? =
 
-* Basic: https://wordpress.org/support/plugin/wp-chosen/
-* Priority: https://chat.flox.io/support/channels/wp-chosen/
+* Forums: https://wordpress.org/support/plugin/wp-chosen/
 
 = Where can I find documentation? =
 
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 5.0.1 - 2020/07/27 =
+* Tweak WordPress 5.5 support
 
 = 5.0.0 - 2020/07/23 =
 * WordPress 5.5 Support
@@ -80,7 +82,7 @@ https://github.com/stuttter/wp-chosen/
 * WordPress 5.3 Support
 
 = 3.1.0 - 2017/06/22 =
-* Avoid conflicts with EasyDigitalDownloads
+* Avoid conflicts with Easy Digital Downloads
 * Avoid conflicts with Stream
 * Avoid conflicts with Select2
 

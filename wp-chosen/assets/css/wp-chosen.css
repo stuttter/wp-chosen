@@ -1,43 +1,34 @@
 /* WP Chosen
 -------------------------------------------------------------- */
 
+/* Prevent stutter from JavaScript UI replacement */
 body.js select {
-	height: 28px;
-	opacity: 0.2;
-	width: auto;
+	min-width: 58px;
 	max-width: 300px;
 }
-
 body.js div.chosen-container {
 	min-width: 58px;
 	max-width: 300px;
 }
 
+/* WordPress Core overrides */
 .wrap .actions:not(.bulkactions),
 .media-toolbar,
 .tablenav .actions {
-	overflow: visible !important; /* Core override */
+	overflow: visible !important;
 }
 
+/* WordPress Customizer select widths look better like this for now */
 .chosen-container.chosen-container-multi,
 #customize-theme-controls .chosen-container {
 	width: 100% !important;
 }
 
+/* Match WordPress Core styling */
 .chosen-container {
 	font-size: 14px;
 	vertical-align: middle;
-	padding-top: 1px;
 	margin: 0 1px;
-}
-
-/* This stinks */
-.form-table .chosen-container {
-	padding-top: 0;
-}
-
-.chosen-container-single .chosen-single div b {
-	background-image: none;
 }
 
 .chosen-container-single .chosen-single div b:before {
@@ -78,13 +69,12 @@ body.js div.chosen-container {
 .chosen-container-multi .chosen-choices,
 .chosen-container-single .chosen-single,
 .chosen-container-active.chosen-with-drop .chosen-single {
-	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 50%;
+	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55%;
 	background-size: 16px 16px;
 	border-radius: 4px;
 	border: 1px solid #7e8993;
 	box-shadow: 0 0 0 transparent;
 	color: #32373c;
-	padding: 1px 7px;
 }
 
 .chosen-container-single .chosen-default {
@@ -93,7 +83,8 @@ body.js div.chosen-container {
 
 .chosen-container-single .chosen-single,
 .chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single {
-	min-height: 28px;
+	min-height: 30px;
+	height: 100%;
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
@@ -114,16 +105,6 @@ body.js div.chosen-container {
 	width: auto !important;
 }
 
-.chosen-container-multi .chosen-choices,
-.chosen-container-single .chosen-single {
-	box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.07 );
-}
-
-.chosen-container-multi.chosen-with-drop .chosen-choices,
-.chosen-container-active.chosen-with-drop .chosen-single {
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-}
-
 .chosen-container-multi.chosen-with-drop .chosen-choices {
 	border-bottom-color: transparent;
 }
@@ -139,7 +120,6 @@ body.js div.chosen-container {
 	font-size: 13px;
 	position: absolute;
 	top: 100%;
-	z-index: 1010;
 	width: 100%;
 	border-radius: 0 0 4px 4px;
 	border-width: 0 1px 0 1px;
@@ -148,13 +128,9 @@ body.js div.chosen-container {
 	outline: 2px solid transparent;
 }
 
-.chosen-container.chosen-dropup .chosen-single {
-	z-index: 1009;
-}
-
 .chosen-container.chosen-dropup .chosen-drop {
-	border-width: 0 1px 0 1px;
-	border-radius: 4px 4px 0 0;
+	border-width: 0 1px;
+	bottom: calc( 100% - 1px );
 }
 
 .chosen-container-single .chosen-search input[type=text] {
@@ -175,30 +151,13 @@ body.js div.chosen-container {
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
-	margin: 0 4px 4px 0 !important;
-	padding: 0 0 0 4px !important;
+	margin: 4px !important;
+	padding: 0 !important;
 	max-height: 240px;
 }
 
-.chosen-container .chosen-results li {
-	border-radius: 4px;
-}
-
 .chosen-container .chosen-results li.highlighted {
-	background-image: none;
 	color: #fff;
-}
-
-.chosen-container .chosen-results li.result-selected:not(.highlighted) {
-	background-color: #eee;
-}
-
-.chosen-container.chosen-with-drop.chosen-dropup .chosen-drop .active-result:first-child {
-	margin-top: 3px;
-}
-
-.chosen-container.chosen-with-drop.chosen-dropup .chosen-single {
-	border-top-color: transparent;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
@@ -272,6 +231,7 @@ body.js div.chosen-container {
 
 /* Force on all screen sizes & resolutions */
 .chosen-rtl .chosen-search input[type=text],
+.chosen-container .chosen-results li.highlighted
 .chosen-container-single .chosen-single abbr,
 .chosen-container-single .chosen-single div b,
 .chosen-container-single .chosen-search input[type=text],
@@ -391,10 +351,7 @@ body.admin-color-fresh .chosen-container .chosen-drop {
 	border-color: #007cba;
 	box-shadow: 0 1px 0 1px #007cba;
 }
-body.admin-color-fresh .chosen-container.chosen-with-drop.chosen-dropup .chosen-single {
-	box-shadow: 0 0 0 1px #007cba;
-}
-body.admin-color-fresh .chosen-container.chosen-with-drop.chosen-dropup .chosen-drop {
+body.admin-color-fresh .chosen-container.chosen-dropup .chosen-drop {
 	box-shadow: 0 -1px 0 1px #007cba;
 }
 body.admin-color-fresh .chosen-container .chosen-results li.highlighted {
@@ -410,6 +367,9 @@ body.admin-color-blue .chosen-container .chosen-drop {
 	border-color: #096484;
 	box-shadow: 0 1px 0 1px #096484;
 }
+body.admin-color-blue .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #096484;
+}
 body.admin-color-blue .chosen-container .chosen-results li.highlighted {
 	background-color: #007cba;
 }
@@ -422,6 +382,9 @@ body.admin-color-coffee .chosen-container-active .chosen-single {
 body.admin-color-coffee .chosen-container .chosen-drop {
 	border-color: #c7a589;
 	box-shadow: 0 1px 0 1px #c7a589;
+}
+body.admin-color-coffee .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #c7a589;
 }
 body.admin-color-coffee .chosen-container .chosen-results li.highlighted {
 	background-color: #c7a589;
@@ -436,6 +399,9 @@ body.admin-color-ectoplasm .chosen-container .chosen-drop {
 	border-color: #a3b745;
 	box-shadow: 0 1px 0 1px #a3b745;
 }
+body.admin-color-ectoplasm .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #a3b745;
+}
 body.admin-color-ectoplasm .chosen-container .chosen-results li.highlighted {
 	background-color: #a3b745;
 }
@@ -448,6 +414,9 @@ body.admin-color-midnight .chosen-container-active .chosen-single {
 body.admin-color-midnight .chosen-container .chosen-drop {
 	border-color: #e14d43;
 	box-shadow: 0 1px 0 1px #e14d43;
+}
+body.admin-color-midnight .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #e14d43;
 }
 body.admin-color-midnight .chosen-container .chosen-results li.highlighted {
 	background-color: #e14d43;
@@ -462,6 +431,9 @@ body.admin-color-ocean .chosen-container .chosen-drop {
 	border-color: #9ebaa0;
 	box-shadow: 0 1px 0 1px #9ebaa0;
 }
+body.admin-color-ocean .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #9ebaa0;
+}
 body.admin-color-ocean .chosen-container .chosen-results li.highlighted {
 	background-color: #9ebaa0;
 }
@@ -475,6 +447,9 @@ body.admin-color-sunrise .chosen-container .chosen-drop {
 	border-color: #dd823b;
 	box-shadow: 0 1px 0 1px #dd823b;
 }
+body.admin-color-sunrise .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #dd823b;
+}
 body.admin-color-sunrise .chosen-container .chosen-results li.highlighted {
 	background-color: #dd823b;
 }
@@ -487,6 +462,9 @@ body.admin-color-light .chosen-container-active .chosen-single {
 body.admin-color-light .chosen-container .chosen-drop {
 	border-color: #04a4cc;
 	box-shadow: 0 1px 0 1px #04a4cc;
+}
+body.admin-color-light .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #04a4cc;
 }
 body.admin-color-light .chosen-container .chosen-results li.highlighted {
 	background-color: #04a4cc;
@@ -503,6 +481,9 @@ body.admin-color-evergreen .chosen-container .chosen-drop {
 	border-color: #36533f;
 	box-shadow: 0 1px 0 1px #36533f;
 }
+body.admin-color-evergreen .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #36533f;
+}
 body.admin-color-evergreen .chosen-container .chosen-results li.highlighted {
 	background-color: #36533f;
 }
@@ -515,6 +496,9 @@ body.admin-color-mint .chosen-container-active .chosen-single {
 body.admin-color-mint .chosen-container .chosen-drop {
 	border-color: #4f6d59;
 	box-shadow: 0 1px 0 1px #4f6d59;
+}
+body.admin-color-mint .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #4f6d59;
 }
 body.admin-color-mint .chosen-container .chosen-results li.highlighted {
 	background-color: #4f6d59;
