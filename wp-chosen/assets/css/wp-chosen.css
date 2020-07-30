@@ -26,9 +26,12 @@ body.js div.chosen-container {
 
 /* Match WordPress Core styling */
 .chosen-container {
-	font-size: 14px;
 	vertical-align: middle;
 	margin: 0 1px;
+}
+
+.chosen-container-single .chosen-single {
+	padding: 2px 0 2px 8px;
 }
 
 .chosen-container-single .chosen-single div b:before {
@@ -117,7 +120,6 @@ body.js div.chosen-container {
 }
 
 .chosen-container .chosen-drop {
-	font-size: 13px;
 	position: absolute;
 	top: 100%;
 	width: 100%;
@@ -139,7 +141,6 @@ body.js div.chosen-container {
 	width: 100% !important;
 	height: auto;
 	outline: 0;
-	font-size: 13px;
 	line-height: normal;
 	border: 1px solid #ddd;
 	border-radius: 4px;
@@ -172,16 +173,20 @@ body.js div.chosen-container {
 	cursor: default;
 }
 
-.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-	position: absolute;
-	top: 4px;
-	right: 3px;
-	display: block;
+.chosen-container .search-choice-close {
 	width: 15px;
 	height: 15px;
+	padding: 0;
+	display: block;
 }
 
-.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+.chosen-container .search-choice-close,
+.chosen-container .search-choice-close:hover,
+.chosen-container .search-choice-close:active {
+	background: none;
+}
+
+.chosen-container .search-choice-close:before {
 	height: 15px;
 	width: 15px;
 	position: absolute;
@@ -194,8 +199,17 @@ body.js div.chosen-container {
 	line-height: 15px;
 }
 
-.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover:before {
+.chosen-container .search-choice-close:hover:before {
 	color: #aaa;
+}
+
+.chosen-container-single .chosen-single .search-choice-close {
+	right: 22px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	top: 4px;
+	right: 3px;
 }
 
 .chosen-container-multi .spinner {

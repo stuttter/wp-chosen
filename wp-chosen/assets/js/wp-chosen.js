@@ -7,7 +7,7 @@ jQuery( document ).ready( function ( $ ) {
 	};
 
 	/* Targets */
-	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [name^=sc], [class*=select2], [class*=chosen-select])',
 		chosen_targets =
 		'.wp-pretty-filters'         + chosen_selects
 		+ ', .wp-filter'             + chosen_selects
