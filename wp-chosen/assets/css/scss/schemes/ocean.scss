@@ -1,0 +1,15 @@
+/* Ocean */
+body.admin-color-ocean .chosen-container-active .chosen-single {
+	border-color: #9ebaa0;
+	box-shadow: 0 0 0 1px #9ebaa0;
+}
+body.admin-color-ocean .chosen-container .chosen-drop {
+	border-color: #9ebaa0;
+	box-shadow: 0 1px 0 1px #9ebaa0;
+}
+body.admin-color-ocean .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #9ebaa0;
+}
+body.admin-color-ocean .chosen-container .chosen-results li.highlighted {
+	background-color: #9ebaa0;
+}

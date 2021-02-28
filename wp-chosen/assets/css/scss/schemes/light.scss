@@ -1,0 +1,15 @@
+/* Light */
+body.admin-color-light .chosen-container-active .chosen-single {
+	border-color: #04a4cc;
+	box-shadow: 0 0 0 1px #04a4cc;
+}
+body.admin-color-light .chosen-container .chosen-drop {
+	border-color: #04a4cc;
+	box-shadow: 0 1px 0 1px #04a4cc;
+}
+body.admin-color-light .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #04a4cc;
+}
+body.admin-color-light .chosen-container .chosen-results li.highlighted {
+	background-color: #04a4cc;
+}

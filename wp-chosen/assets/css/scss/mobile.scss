@@ -1,0 +1,15 @@
+@media only screen and ( max-width: 782px ) {
+
+	.chosen-container-single .chosen-single,
+	.chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single {
+		height: auto;
+		line-height: 2;
+		font-size: 16px;
+		padding: 3px 10px;
+	}
+
+	.chosen-container .chosen-results li {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}

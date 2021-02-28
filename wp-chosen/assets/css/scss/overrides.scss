@@ -1,0 +1,18 @@
+/* WordPress Core overrides */
+.wrap .actions:not(.bulkactions),
+.media-toolbar,
+.tablenav .actions {
+	overflow: visible !important;
+}
+
+/* WordPress Customizer select widths look better like this for now */
+.chosen-container.chosen-container-multi,
+#customize-theme-controls .chosen-container {
+	width: 100% !important;
+}
+
+/* Match WordPress Core styling */
+.chosen-container {
+	vertical-align: middle;
+	margin: 0 1px;
+}

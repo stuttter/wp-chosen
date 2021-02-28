@@ -1,0 +1,14 @@
+/* Evergreen */
+body.admin-color-evergreen .chosen-container-active .chosen-single {
+	box-shadow: 0 0 0 1px #36533f;
+}
+body.admin-color-evergreen .chosen-container .chosen-drop {
+	border-color: #36533f;
+	box-shadow: 0 1px 0 1px #36533f;
+}
+body.admin-color-evergreen .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #36533f;
+}
+body.admin-color-evergreen .chosen-container .chosen-results li.highlighted {
+	background-color: #36533f;
+}

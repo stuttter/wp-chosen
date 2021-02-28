@@ -1,0 +1,15 @@
+/* Ectoplasm */
+body.admin-color-ectoplasm .chosen-container-active .chosen-single {
+	border-color: #a3b745;
+	box-shadow: 0 0 0 1px #a3b745;
+}
+body.admin-color-ectoplasm .chosen-container .chosen-drop {
+	border-color: #a3b745;
+	box-shadow: 0 1px 0 1px #a3b745;
+}
+body.admin-color-ectoplasm .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #a3b745;
+}
+body.admin-color-ectoplasm .chosen-container .chosen-results li.highlighted {
+	background-color: #a3b745;
+}

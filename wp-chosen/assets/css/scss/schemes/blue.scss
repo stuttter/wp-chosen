@@ -1,0 +1,15 @@
+/* Blue */
+body.admin-color-blue .chosen-container-active .chosen-single {
+	border-color: #096484;
+	box-shadow: 0 0 0 1px #096484;
+}
+body.admin-color-blue .chosen-container .chosen-drop {
+	border-color: #096484;
+	box-shadow: 0 1px 0 1px #096484;
+}
+body.admin-color-blue .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #096484;
+}
+body.admin-color-blue .chosen-container .chosen-results li.highlighted {
+	background-color: #007cba;
+}

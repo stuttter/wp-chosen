@@ -1,0 +1,23 @@
+{
+	"name": "wp-chosen",
+	"version": "5.1.0",
+	"description": "Makes unwieldy select boxes more user-friendly",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stuttter/wp-chosen"
+	},
+	"bugs": {
+		"url": "https://github.com/stuttter/wp-chosen/issues"
+	},
+	"homepage": "https://jjj.software",
+	"engines": {
+		"node": ">=8.0.0",
+		"npm": ">=6.0.0"
+	},
+	"dependencies": {
+		"postcss": "^8.2.6",
+		"postcss-cli": "^8.3.1",
+		"postcss-palettize-colors": "git+https://github.com/ryelle/postcss-palettize-colors.git"
+	}
+}

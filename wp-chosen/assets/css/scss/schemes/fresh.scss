@@ -1,0 +1,18 @@
+/* Fresh */
+body.admin-color-fresh .chosen-container-active .chosen-single {
+	border-color: #007cba;
+	box-shadow: 0 0 0 1px #007cba;
+}
+
+body.admin-color-fresh .chosen-container .chosen-drop {
+	border-color: #007cba;
+	box-shadow: 0 1px 0 1px #007cba;
+}
+
+body.admin-color-fresh .chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #007cba;
+}
+
+body.admin-color-fresh .chosen-container .chosen-results li.highlighted {
+	background-color: #007cba;
+}
