@@ -1,0 +1,18 @@
+/* Default */
+.chosen-container-active .chosen-single {
+	border-color: #3582c4;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.chosen-container .chosen-drop {
+	border-color: #3582c4;
+	box-shadow: 0 1px 0 1px #2271b1;
+}
+
+.chosen-container.chosen-dropup .chosen-drop {
+	box-shadow: 0 -1px 0 1px #2271b1;
+}
+
+.chosen-container .chosen-results li.highlighted {
+	background-color: #2271b1;
+}
