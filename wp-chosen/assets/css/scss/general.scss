@@ -12,7 +12,7 @@
 	font-family: dashicons;
 	font-size: 15px;
 	content: '';
-	color: #555;
+	color: #50575e;
 	margin-top: 1px;
 }
 
@@ -30,7 +30,7 @@
 	position: absolute;
 	right: 9px;
 	top: 9px;
-	color: #bbb;
+	color: #c3c4c7;
 	font-family: dashicons;
 	font-size: 18px;
 	line-height: 18px;
@@ -43,13 +43,13 @@
 	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55%;
 	background-size: 16px 16px;
 	border-radius: 4px;
-	border: 1px solid #7e8993;
+	border: 1px solid #8c8f94;
 	box-shadow: 0 0 0 transparent;
-	color: #32373c;
+	color: #2c3338;
 }
 
 .chosen-container-single .chosen-default {
-	color: #a0a5aa;
+	color: #a7aaad;
 }
 
 .chosen-container-single .chosen-single,
@@ -110,13 +110,13 @@
 	height: auto;
 	outline: 0;
 	line-height: normal;
-	border: 1px solid #ddd;
+	border: 1px solid #dcdcde;
 	border-radius: 4px;
 	box-shadow: none;
 }
 
 .chosen-container .chosen-results {
-	color: #444;
+	color: #3c434a;
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -132,12 +132,12 @@
 .chosen-container-multi .chosen-choices li.search-choice {
 	margin: 3px 5px 3px 0;
 	padding: 5px 22px 5px 5px;
-	border: 1px solid #ddd;
+	border: 1px solid #dcdcde;
 	max-width: 100%;
 	border-radius: 0;
-	background: #f4f4f4;
+	background: #f6f7f7;
 	box-shadow: none;
-	color: #333;
+	color: #2c3338;
 	cursor: default;
 }
 
@@ -160,7 +160,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: #555;
+	color: #50575e;
 	font-family: 'dashicons';
 	content: '\f158';
 	font-size: 15px;
@@ -168,7 +168,7 @@
 }
 
 .chosen-container .search-choice-close:hover:before {
-	color: #aaa;
+	color: #a7aaad;
 }
 
 .chosen-container-single .chosen-single .search-choice-close {
@@ -193,7 +193,7 @@
 	display: block;
 	width: 18px;
 	height: 18px;
-	color: #666;
+	color: #646970;
 }
 
 .chosen-container-single .chosen-single abbr:before {
@@ -208,5 +208,5 @@
 }
 
 .chosen-container-single .chosen-single abbr:hover {
-	color: #dc3232;
+	color: #d63638;
 }
