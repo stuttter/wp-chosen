@@ -7,7 +7,7 @@ jQuery( document ).ready( function ( $ ) {
 	};
 
 	/* Targets */
-	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [name^=sc], [class*=select2], [class*=chosen-select])',
+	var chosen_selects = ' select:not([name^=chosen], [name^=edd], [name^=_edd], [name^=sc], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search])',
 		chosen_targets =
 		'.wp-pretty-filters'         + chosen_selects
 		+ ', .wp-filter'             + chosen_selects
