@@ -7,9 +7,9 @@
  * Author URI:        https://jjj.blog
  * Description:       Makes unwieldy select boxes more user-friendly
  * License:           GPLv2 or later
- * Requires at least: 5.3
+ * Requires at least: 5.6
  * Requires PHP:      7.0
- * Version:           5.1.0
+ * Version:           5.2.0
  */
 
 // Exit if accessed directly
@@ -50,5 +50,5 @@ function wp_chosen_get_plugin_url() {
  * @return int
  */
 function wp_chosen_get_asset_version() {
-	return 202007300001;
+	return 202103020001;
 }

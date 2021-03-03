@@ -2,9 +2,9 @@
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Donate link: https://wordpressfoundation.org/donate/
-Requires at least: 5.0
-Tested up to: 5.5
-Stable tag: 5.0.1
+Requires at least: 5.6
+Tested up to: 5.7
+Stable tag: 5.2.0
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -49,7 +49,7 @@ WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) f
 	};
 
 	/* Targets */
-	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+	var chosen_selects = ' select:not(#metakeyselect, [name^=chosen], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search])',
 		chosen_targets =
 		'.wp-pretty-filters'         + chosen_selects
 		+ ', .wp-filter'             + chosen_selects
@@ -70,6 +70,12 @@ WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) f
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 5.2.0 - 2021/03/02 =
+* WordPress 5.7 support
+* Avoid conflicts with custom fields
+* Avoid conflicts with WooCommerce/selectWoo
+* Avoid conflicts with other third party plugins
 
 = 5.0.1 - 2020/07/27 =
 * Tweak WordPress 5.5 support
