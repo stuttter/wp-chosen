@@ -7,7 +7,7 @@
  * Author URI:        https://jjj.blog
  * Description:       Makes unwieldy select boxes more user-friendly
  * License:           GPLv2 or later
- * Requires at least: 5.6
+ * Requires at least: 5.7
  * Requires PHP:      7.0
  * Version:           6.1.0
  */
