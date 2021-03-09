@@ -3,7 +3,7 @@ Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 5.7
 Tested up to: 5.8
-Stable tag: 6.0.0
+Stable tag: 6.1.0
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -71,6 +71,15 @@ Extras
 * Seashore
 * Vinyard
 
+American
+
+* From Many One
+* NASA 1976
+* NASA
+* Old Glory
+* Open Highway
+* Shenandoah
+
 = What elements does this target? =
 
 `
@@ -102,6 +111,9 @@ Extras
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 6.1.0 - 2021/03/09 =
+* Add support for 6 extra color schemes
 
 = 6.0.0 - 2021/03/09 =
 * Add support for 11 extra color schemes
