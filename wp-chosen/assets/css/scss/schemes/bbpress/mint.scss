@@ -1,0 +1,36 @@
+/* Mint */
+body.admin-color-mint {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #4f6d59;
+				box-shadow: 0 0 0 1px #4f6d59;
+			}
+		}
+
+		.chosen-single {
+			border-color: #4f6d59;
+			box-shadow: 0 0 0 1px #4f6d59;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #4f6d59;
+				box-shadow: 0 -1px 0 1px #4f6d59;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #4f6d59;
+			box-shadow: 0 1px 0 1px #4f6d59;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #4f6d59;
+			}
+		}
+	}
+}

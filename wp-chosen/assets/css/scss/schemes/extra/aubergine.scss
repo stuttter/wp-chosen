@@ -1,0 +1,36 @@
+/* Aubergine */
+body.admin-color-aubergine {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #da9b49;
+				box-shadow: 0 0 0 1px #da9b49;
+			}
+		}
+
+		.chosen-single {
+			border-color: #da9b49;
+			box-shadow: 0 0 0 1px #da9b49;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #da9b49;
+				box-shadow: 0 -1px 0 1px #da9b49;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #da9b49;
+			box-shadow: 0 1px 0 1px #da9b49;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #da9b49;
+			}
+		}
+	}
+}

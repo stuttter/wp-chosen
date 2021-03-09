@@ -1,0 +1,36 @@
+/* Midnight */
+body.admin-color-midnight {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #e14d43;
+				box-shadow: 0 0 0 1px #e14d43;
+			}
+		}
+
+		.chosen-single {
+			border-color: #e14d43;
+			box-shadow: 0 0 0 1px #e14d43;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #e14d43;
+				box-shadow: 0 -1px 0 1px #e14d43;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #e14d43;
+			box-shadow: 0 1px 0 1px #e14d43;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #e14d43;
+			}
+		}
+	}
+}

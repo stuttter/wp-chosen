@@ -1,0 +1,36 @@
+/* Coffee */
+body.admin-color-coffee {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #c7a589;
+				box-shadow: 0 0 0 1px #c7a589;
+			}
+		}
+
+		.chosen-single {
+			border-color: #c7a589;
+			box-shadow: 0 0 0 1px #c7a589;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #c7a589;
+				box-shadow: 0 -1px 0 1px #c7a589;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #c7a589;
+			box-shadow: 0 1px 0 1px #c7a589;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #c7a589;
+			}
+		}
+	}
+}

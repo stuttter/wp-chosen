@@ -1,0 +1,36 @@
+/* Fresh */
+body.admin-color-fresh {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #2271b1;
+				box-shadow: 0 0 0 1px #2271b1;
+			}
+		}
+
+		.chosen-single {
+			border-color: #2271b1;
+			box-shadow: 0 0 0 1px #2271b1;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #2271b1;
+				box-shadow: 0 -1px 0 1px #2271b1;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #2271b1;
+			box-shadow: 0 1px 0 1px #2271b1;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #2271b1;
+			}
+		}
+	}
+}

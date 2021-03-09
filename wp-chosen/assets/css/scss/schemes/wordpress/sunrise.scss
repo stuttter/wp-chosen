@@ -1,0 +1,36 @@
+/* Sunrise */
+body.admin-color-sunrise {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #dd823b;
+				box-shadow: 0 0 0 1px #dd823b;
+			}
+		}
+
+		.chosen-single {
+			border-color: #dd823b;
+			box-shadow: 0 0 0 1px #dd823b;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #dd823b;
+				box-shadow: 0 -1px 0 1px #dd823b;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #dd823b;
+			box-shadow: 0 1px 0 1px #dd823b;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #dd823b;
+			}
+		}
+	}
+}

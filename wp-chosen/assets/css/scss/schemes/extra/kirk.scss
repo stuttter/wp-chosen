@@ -1,0 +1,36 @@
+/* Kirk */
+body.admin-color-kirk {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #bd3854;
+				box-shadow: 0 0 0 1px #bd3854;
+			}
+		}
+
+		.chosen-single {
+			border-color: #bd3854;
+			box-shadow: 0 0 0 1px #bd3854;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #bd3854;
+				box-shadow: 0 -1px 0 1px #bd3854;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #bd3854;
+			box-shadow: 0 1px 0 1px #bd3854;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #bd3854;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* 80's kid' */
+body.admin-color-80s-kid {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #ed5793;
+				box-shadow: 0 0 0 1px #ed5793;
+			}
+		}
+
+		.chosen-single {
+			border-color: #ed5793;
+			box-shadow: 0 0 0 1px #ed5793;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #ed5793;
+				box-shadow: 0 -1px 0 1px #ed5793;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #ed5793;
+			box-shadow: 0 1px 0 1px #ed5793;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #ed5793;
+			}
+		}
+	}
+}

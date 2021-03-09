@@ -1,0 +1,36 @@
+/* Cruise */
+body.admin-color-cruise {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #8bbc9f;
+				box-shadow: 0 0 0 1px #8bbc9f;
+			}
+		}
+
+		.chosen-single {
+			border-color: #8bbc9f;
+			box-shadow: 0 0 0 1px #8bbc9f;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #8bbc9f;
+				box-shadow: 0 -1px 0 1px #8bbc9f;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #8bbc9f;
+			box-shadow: 0 1px 0 1px #8bbc9f;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #8bbc9f;
+			}
+		}
+	}
+}

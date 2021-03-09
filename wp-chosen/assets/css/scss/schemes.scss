@@ -1,17 +1,32 @@
 /* WordPress Color Schemes
 -------------------------------------------------------------- */
-@import 'schemes/default.scss';
-@import 'schemes/fresh.scss';
-@import 'schemes/light.scss';
-@import 'schemes/modern.scss';
-@import 'schemes/blue.scss';
-@import 'schemes/coffee.scss';
-@import 'schemes/ectoplasm.scss';
-@import 'schemes/midnight.scss';
-@import 'schemes/ocean.scss';
-@import 'schemes/sunrise.scss';
+@import 'schemes/wordpress/default.scss';
+@import 'schemes/wordpress/fresh.scss';
+@import 'schemes/wordpress/light.scss';
+@import 'schemes/wordpress/modern.scss';
+@import 'schemes/wordpress/blue.scss';
+@import 'schemes/wordpress/coffee.scss';
+@import 'schemes/wordpress/ectoplasm.scss';
+@import 'schemes/wordpress/midnight.scss';
+@import 'schemes/wordpress/ocean.scss';
+@import 'schemes/wordpress/sunrise.scss';
 
 /* bbPress Color Schemes
 -------------------------------------------------------------- */
-@import 'schemes/evergreen.scss';
-@import 'schemes/mint.scss';
+@import 'schemes/bbpress/evergreen.scss';
+@import 'schemes/bbpress/mint.scss';
+
+/* Even More Color Schemes
+-------------------------------------------------------------- */
+
+@import 'schemes/extra/80s-kid.scss';
+@import 'schemes/extra/adderley.scss';
+@import 'schemes/extra/aubergine.scss';
+@import 'schemes/extra/cruise.scss';
+@import 'schemes/extra/flat.scss';
+@import 'schemes/extra/contrast-blue.scss';
+@import 'schemes/extra/kirk.scss';
+@import 'schemes/extra/lawn.scss';
+@import 'schemes/extra/primary.scss';
+@import 'schemes/extra/seashore.scss';
+@import 'schemes/extra/vinyard.scss';

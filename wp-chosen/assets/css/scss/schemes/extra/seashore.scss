@@ -1,0 +1,36 @@
+/* Seashore */
+body.admin-color-seashore {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #456a7f;
+				box-shadow: 0 0 0 1px #456a7f;
+			}
+		}
+
+		.chosen-single {
+			border-color: #456a7f;
+			box-shadow: 0 0 0 1px #456a7f;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #456a7f;
+				box-shadow: 0 -1px 0 1px #456a7f;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #456a7f;
+			box-shadow: 0 1px 0 1px #456a7f;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #456a7f;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* Contrast Blue */
+body.admin-color-contrast-blue {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #5c98c8;
+				box-shadow: 0 0 0 1px #5c98c8;
+			}
+		}
+
+		.chosen-single {
+			border-color: #5c98c8;
+			box-shadow: 0 0 0 1px #5c98c8;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #5c98c8;
+				box-shadow: 0 -1px 0 1px #5c98c8;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #5c98c8;
+			box-shadow: 0 1px 0 1px #5c98c8;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #5c98c8;
+			}
+		}
+	}
+}

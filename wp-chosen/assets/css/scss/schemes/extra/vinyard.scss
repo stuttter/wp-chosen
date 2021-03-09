@@ -1,0 +1,36 @@
+/* Vinyard */
+body.admin-color-vinyard {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #cc9e14;
+				box-shadow: 0 0 0 1px #cc9e14;
+			}
+		}
+
+		.chosen-single {
+			border-color: #cc9e14;
+			box-shadow: 0 0 0 1px #cc9e14;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #cc9e14;
+				box-shadow: 0 -1px 0 1px #cc9e14;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #cc9e14;
+			box-shadow: 0 1px 0 1px #cc9e14;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #cc9e14;
+			}
+		}
+	}
+}

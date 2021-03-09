@@ -10,6 +10,25 @@ WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.io/chosen/) fo
 * Activate in the "Plugins" area of your admin by clicking the "Activate" link.
 * No further setup or configuration is necessary.
 
+# Development
+
+`npm install`
+
+Use this command to install PostCSS and all other development dependencies
+
+`npm run remap`
+
+Use this command to remap colors to the latest WordPress palette
+
+`npm run dev`
+
+Use this command to compile human-readable and unminified CSS files
+
+`npm run prod`
+
+Use this command to compile minified CSS files for production environments
+
+
 # FAQ
 
 ### What dropdowns does this target?
@@ -22,7 +41,7 @@ WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.io/chosen/) fo
 	};
 
 	/* Targets */
-	var chosen_selects = ' select:not([name^=edd], [name^=_edd], [class*=select2], [class*=chosen-select])',
+	var chosen_selects = ' select:not(#metakeyselect, [name^=chosen], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search])',
 		chosen_targets =
 		'.wp-pretty-filters'         + chosen_selects
 		+ ', .wp-filter'             + chosen_selects

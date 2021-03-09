@@ -1,0 +1,36 @@
+/* Ocean */
+body.admin-color-ocean {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #9ebaa0;
+				box-shadow: 0 0 0 1px #9ebaa0;
+			}
+		}
+
+		.chosen-single {
+			border-color: #9ebaa0;
+			box-shadow: 0 0 0 1px #9ebaa0;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #9ebaa0;
+				box-shadow: 0 -1px 0 1px #9ebaa0;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #9ebaa0;
+			box-shadow: 0 1px 0 1px #9ebaa0;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #9ebaa0;
+			}
+		}
+	}
+}

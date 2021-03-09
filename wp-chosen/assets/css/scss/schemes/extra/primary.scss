@@ -1,0 +1,36 @@
+/* Primary */
+body.admin-color-primary {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #d8b230;
+				box-shadow: 0 0 0 1px #d8b230;
+			}
+		}
+
+		.chosen-single {
+			border-color: #d8b230;
+			box-shadow: 0 0 0 1px #d8b230;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #d8b230;
+				box-shadow: 0 -1px 0 1px #d8b230;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #d8b230;
+			box-shadow: 0 1px 0 1px #d8b230;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #d8b230;
+			}
+		}
+	}
+}

@@ -23,9 +23,6 @@
 	"browserslist": [
 		"> 2%"
 	],
-	"dependencies": {
-		"postcss-palettize-colors": "git+https://github.com/ryelle/postcss-palettize-colors.git"
-	},
 	"devDependencies": {
 		"autoprefixer": "^10.2.4",
 		"cssnano": "^4.1.10",
@@ -36,6 +33,7 @@
 		"postcss-import": "^14.0.0",
 		"postcss-map-get": "^0.3.0",
 		"postcss-nested": "^5.0.4",
+		"postcss-palettize-colors": "git+https://github.com/ryelle/postcss-palettize-colors.git",
 		"postcss-scss": "^3.0.4",
 		"postcss-sort-media-queries": "^3.4.3",
 		"prettier": "2.2.1"

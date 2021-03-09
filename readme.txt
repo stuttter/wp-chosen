@@ -1,10 +1,9 @@
 === WP Chosen ===
 Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
-Donate link: https://wordpressfoundation.org/donate/
-Requires at least: 5.6
-Tested up to: 5.7
-Stable tag: 5.2.0
+Requires at least: 5.7
+Tested up to: 5.8
+Stable tag: 6.0.0
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -39,6 +38,39 @@ WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) f
 
 == Frequently Asked Questions ==
 
+= What color schemes does this support? =
+
+WordPress
+
+* Default/Fresh
+* Light
+* Modern
+* Blue
+* Coffee
+* Ectoplasm
+* Midnight
+* Ocean
+* Sunrise
+
+bbPress
+
+* Evergreen
+* Mint
+
+Extras
+
+* 80's Kid
+* Adderley
+* Aubergine
+* High Contrast Blue
+* Cruise
+* Flat
+* Kirk
+* Lawn
+* Primary
+* Seashore
+* Vinyard
+
 = What elements does this target? =
 
 `
@@ -70,6 +102,10 @@ WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) f
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 6.0.0 - 2021/03/09 =
+* Add support for 11 extra color schemes
+* Tweak WordPress 5.7 support
 
 = 5.2.0 - 2021/03/02 =
 * WordPress 5.7 support

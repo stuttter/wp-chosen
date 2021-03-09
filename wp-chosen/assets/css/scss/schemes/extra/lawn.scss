@@ -1,0 +1,36 @@
+/* Lawn */
+body.admin-color-lawn {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #a7b145;
+				box-shadow: 0 0 0 1px #a7b145;
+			}
+		}
+
+		.chosen-single {
+			border-color: #a7b145;
+			box-shadow: 0 0 0 1px #a7b145;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #a7b145;
+				box-shadow: 0 -1px 0 1px #a7b145;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #a7b145;
+			box-shadow: 0 1px 0 1px #a7b145;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #a7b145;
+			}
+		}
+	}
+}
