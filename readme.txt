@@ -106,6 +106,10 @@ https://github.com/stuttter/wp-chosen/
 = 6.0.0 - 2021/03/09 =
 * Add support for 11 extra color schemes
 * Tweak WordPress 5.7 support
+* Avoid conflicts with WooCommerce
+* Avoid conflicts with SendGrid
+* Avoid conflicts with LearnDash
+* Avoid conflicts with Advanced Custom Fields
 
 = 5.2.0 - 2021/03/02 =
 * WordPress 5.7 support
