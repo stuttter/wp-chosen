@@ -1,0 +1,36 @@
+/* Shenandoah */
+body.admin-color-shenandoah {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #2e8540;
+				box-shadow: 0 0 0 1px #2e8540;
+			}
+		}
+
+		.chosen-single {
+			border-color: #2e8540;
+			box-shadow: 0 0 0 1px #2e8540;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #2e8540;
+				box-shadow: 0 -1px 0 1px #2e8540;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #2e8540;
+			box-shadow: 0 1px 0 1px #2e8540;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #2e8540;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* Open Highway */
+body.admin-color-open-highway {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #fdb81e;
+				box-shadow: 0 0 0 1px #fdb81e;
+			}
+		}
+
+		.chosen-single {
+			border-color: #fdb81e;
+			box-shadow: 0 0 0 1px #fdb81e;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #fdb81e;
+				box-shadow: 0 -1px 0 1px #fdb81e;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #fdb81e;
+			box-shadow: 0 1px 0 1px #fdb81e;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #fdb81e;
+			}
+		}
+	}
+}

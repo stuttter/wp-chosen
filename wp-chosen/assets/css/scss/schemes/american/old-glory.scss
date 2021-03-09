@@ -1,0 +1,36 @@
+/* Old Glory */
+body.admin-color-old-glory {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #112e51;
+				box-shadow: 0 0 0 1px #112e51;
+			}
+		}
+
+		.chosen-single {
+			border-color: #112e51;
+			box-shadow: 0 0 0 1px #112e51;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #112e51;
+				box-shadow: 0 -1px 0 1px #112e51;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #112e51;
+			box-shadow: 0 1px 0 1px #112e51;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #112e51;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* NASA 1976 */
+body.admin-color-nasa-1976 {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #d22841;
+				box-shadow: 0 0 0 1px #d22841;
+			}
+		}
+
+		.chosen-single {
+			border-color: #d22841;
+			box-shadow: 0 0 0 1px #d22841;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #d22841;
+				box-shadow: 0 -1px 0 1px #d22841;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #d22841;
+			box-shadow: 0 1px 0 1px #d22841;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #d22841;
+			}
+		}
+	}
+}

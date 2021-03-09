@@ -727,6 +727,141 @@ body.admin-color-vinyard .chosen-container .chosen-drop {
 body.admin-color-vinyard .chosen-container .chosen-results li.highlighted {
   background-color: #cc9e14;
 }
+/* American Color Schemes
+-------------------------------------------------------------- */
+/* From Many One */
+body.admin-color-from-many-one
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #981b1e;
+  box-shadow: 0 0 0 1px #981b1e;
+}
+body.admin-color-from-many-one .chosen-container-active .chosen-single {
+  border-color: #981b1e;
+  box-shadow: 0 0 0 1px #981b1e;
+}
+body.admin-color-from-many-one .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #981b1e;
+  box-shadow: 0 -1px 0 1px #981b1e;
+}
+body.admin-color-from-many-one .chosen-container .chosen-drop {
+  border-color: #981b1e;
+  box-shadow: 0 1px 0 1px #981b1e;
+}
+body.admin-color-from-many-one
+  .chosen-container
+  .chosen-results
+  li.highlighted {
+  background-color: #981b1e;
+}
+/* NASA */
+body.admin-color-nasa .chosen-container-active.chosen-with-drop .chosen-single {
+  border-color: #0b3d91;
+  box-shadow: 0 0 0 1px #0b3d91;
+}
+body.admin-color-nasa .chosen-container-active .chosen-single {
+  border-color: #0b3d91;
+  box-shadow: 0 0 0 1px #0b3d91;
+}
+body.admin-color-nasa .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #0b3d91;
+  box-shadow: 0 -1px 0 1px #0b3d91;
+}
+body.admin-color-nasa .chosen-container .chosen-drop {
+  border-color: #0b3d91;
+  box-shadow: 0 1px 0 1px #0b3d91;
+}
+body.admin-color-nasa .chosen-container .chosen-results li.highlighted {
+  background-color: #0b3d91;
+}
+/* NASA 1976 */
+body.admin-color-nasa-1976
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #d22841;
+  box-shadow: 0 0 0 1px #d22841;
+}
+body.admin-color-nasa-1976 .chosen-container-active .chosen-single {
+  border-color: #d22841;
+  box-shadow: 0 0 0 1px #d22841;
+}
+body.admin-color-nasa-1976 .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #d22841;
+  box-shadow: 0 -1px 0 1px #d22841;
+}
+body.admin-color-nasa-1976 .chosen-container .chosen-drop {
+  border-color: #d22841;
+  box-shadow: 0 1px 0 1px #d22841;
+}
+body.admin-color-nasa-1976 .chosen-container .chosen-results li.highlighted {
+  background-color: #d22841;
+}
+/* Old Glory */
+body.admin-color-old-glory
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #112e51;
+  box-shadow: 0 0 0 1px #112e51;
+}
+body.admin-color-old-glory .chosen-container-active .chosen-single {
+  border-color: #112e51;
+  box-shadow: 0 0 0 1px #112e51;
+}
+body.admin-color-old-glory .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #112e51;
+  box-shadow: 0 -1px 0 1px #112e51;
+}
+body.admin-color-old-glory .chosen-container .chosen-drop {
+  border-color: #112e51;
+  box-shadow: 0 1px 0 1px #112e51;
+}
+body.admin-color-old-glory .chosen-container .chosen-results li.highlighted {
+  background-color: #112e51;
+}
+/* Open Highway */
+body.admin-color-open-highway
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #fdb81e;
+  box-shadow: 0 0 0 1px #fdb81e;
+}
+body.admin-color-open-highway .chosen-container-active .chosen-single {
+  border-color: #fdb81e;
+  box-shadow: 0 0 0 1px #fdb81e;
+}
+body.admin-color-open-highway .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #fdb81e;
+  box-shadow: 0 -1px 0 1px #fdb81e;
+}
+body.admin-color-open-highway .chosen-container .chosen-drop {
+  border-color: #fdb81e;
+  box-shadow: 0 1px 0 1px #fdb81e;
+}
+body.admin-color-open-highway .chosen-container .chosen-results li.highlighted {
+  background-color: #fdb81e;
+}
+/* Shenandoah */
+body.admin-color-shenandoah
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #2e8540;
+  box-shadow: 0 0 0 1px #2e8540;
+}
+body.admin-color-shenandoah .chosen-container-active .chosen-single {
+  border-color: #2e8540;
+  box-shadow: 0 0 0 1px #2e8540;
+}
+body.admin-color-shenandoah .chosen-container.chosen-dropup .chosen-drop {
+  border-color: #2e8540;
+  box-shadow: 0 -1px 0 1px #2e8540;
+}
+body.admin-color-shenandoah .chosen-container .chosen-drop {
+  border-color: #2e8540;
+  box-shadow: 0 1px 0 1px #2e8540;
+}
+body.admin-color-shenandoah .chosen-container .chosen-results li.highlighted {
+  background-color: #2e8540;
+}
 /* Scroll bars
 -------------------------------------------------------------- */
 .chosen-container-single .chosen-results::-webkit-scrollbar {
