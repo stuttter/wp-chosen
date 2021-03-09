@@ -1,0 +1,36 @@
+/* NASA */
+body.admin-color-nasa {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #0B3D91;
+				box-shadow: 0 0 0 1px #0B3D91;
+			}
+		}
+
+		.chosen-single {
+			border-color: #0B3D91;
+			box-shadow: 0 0 0 1px #0B3D91;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #0B3D91;
+				box-shadow: 0 -1px 0 1px #0B3D91;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #0B3D91;
+			box-shadow: 0 1px 0 1px #0B3D91;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #0B3D91;
+			}
+		}
+	}
+}

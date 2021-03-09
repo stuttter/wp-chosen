@@ -1,0 +1,36 @@
+/* From Many One */
+body.admin-color-from-many-one {
+	.chosen-container-active {
+		&.chosen-with-drop {
+			.chosen-single {
+				border-color: #981b1e;
+				box-shadow: 0 0 0 1px #981b1e;
+			}
+		}
+
+		.chosen-single {
+			border-color: #981b1e;
+			box-shadow: 0 0 0 1px #981b1e;
+		}
+	}
+
+	.chosen-container {
+		&.chosen-dropup {
+			.chosen-drop {
+				border-color: #981b1e;
+				box-shadow: 0 -1px 0 1px #981b1e;
+			}
+		}
+
+		.chosen-drop {
+			border-color: #981b1e;
+			box-shadow: 0 1px 0 1px #981b1e;
+		}
+
+		.chosen-results {
+			li.highlighted {
+				background-color: #981b1e;
+			}
+		}
+	}
+}
