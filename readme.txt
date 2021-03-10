@@ -3,7 +3,7 @@ Contributors: johnjamesjacoby, stuttter
 Tags: jquery, select, chosen
 Requires at least: 5.7
 Tested up to: 5.8
-Stable tag: 6.1.0
+Stable tag: 6.1.1
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -83,23 +83,25 @@ American
 = What elements does this target? =
 
 `
-	/* Options */
-	var chosen_options = {
-		disable_search_threshold: 13,
-		search_contains: true
-	};
 
-	/* Targets */
-	var chosen_selects = ' select:not(#metakeyselect, [name^=chosen], [name^=acf_], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search], [class=learndash-binary-selector-items], [class=sendgrid-settings-select])',
-		chosen_targets =
-		'.wp-pretty-filters'         + chosen_selects
-		+ ', .wp-filter'             + chosen_selects
-		+ ', .media-toolbar'         + chosen_selects
-		+ ', .postbox .inside'       + chosen_selects
-		+ ', .tablenav'              + chosen_selects
-		+ ', .form-table'            + chosen_selects
-		+ ', .form-wrap'             + chosen_selects
-		+ ', .customize-pane-parent' + chosen_selects;
+/* Options */
+var chosen_options = {
+	disable_search_threshold: 13,
+	search_contains: true
+};
+
+/* Targets */
+var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=chosen], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search], [class=learndash-binary-selector-items], [class=sendgrid-settings-select])',
+	chosen_targets =
+	'.wp-pretty-filters'         + chosen_selects
+	+ ', .wp-filter'             + chosen_selects
+	+ ', .media-toolbar'         + chosen_selects
+	+ ', .postbox .inside'       + chosen_selects
+	+ ', .tablenav'              + chosen_selects
+	+ ', .form-table'            + chosen_selects
+	+ ', .form-wrap'             + chosen_selects
+	+ ', .customize-pane-parent' + chosen_selects;
+
 `
 
 = Where can I get support? =
@@ -111,6 +113,9 @@ American
 https://github.com/stuttter/wp-chosen/
 
 == Changelog ==
+
+= 6.1.1 - 2021/03/10 =
+* Tweak third-party plugin compatibility
 
 = 6.1.0 - 2021/03/09 =
 * Add support for 6 extra color schemes

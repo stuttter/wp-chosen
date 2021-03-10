@@ -7,7 +7,7 @@ jQuery( document ).ready( function ( $ ) {
 	};
 
 	/* Targets */
-	var chosen_selects = ' select:not(#metakeyselect, [name^=chosen], [name^=acf_], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search], [class=learndash-binary-selector-items], [class=sendgrid-settings-select])',
+	var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [name^=_edd], [name^=sc], [name=wc_order_action], [class*=chosen], [class*=select2], [class*=wc-enhanced-select], [class*=wc-product-search], [class*=wc-enhanced-select-nostd], [class*=wc-customer-search], [class*=wc-category-search], [class=learndash-binary-selector-items], [class=sendgrid-settings-select])',
 		chosen_targets =
 		'.wp-pretty-filters'         + chosen_selects
 		+ ', .wp-filter'             + chosen_selects

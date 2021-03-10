@@ -9,7 +9,7 @@
  * License:           GPLv2 or later
  * Requires at least: 5.7
  * Requires PHP:      7.0
- * Version:           6.1.0
+ * Version:           6.1.1
  */
 
 // Exit if accessed directly
@@ -52,5 +52,5 @@ function wp_chosen_get_plugin_url() {
 function wp_chosen_get_asset_version() {
 	return defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG
 		? time()
-		: 202103090002;
+		: 202103100002;
 }
