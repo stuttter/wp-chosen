@@ -1,22 +1,26 @@
 <?php
 
-/*
+/**
  * Plugin Name:       WP Chosen
- * Plugin URI:        https://wordpress.org/plugins/wp-chosen/
- * Author:            John James Jacoby
- * Author URI:        https://jjj.blog
  * Description:       Makes unwieldy select boxes more user-friendly
- * License:           GPLv2 or later
+ * Plugin URI:        https://wordpress.org/plugins/wp-chosen
+ * Author:            Triple J Software, Inc.
+ * Author URI:        https://jjj.software
+ * License:           GNU General Public License v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       wp-chosen
+ * Domain Path:       /wp-chosen/assets/lang/
  * Requires at least: 5.7
  * Requires PHP:      7.0
- * Version:           6.1.1
+ * Tested up to:      5.8
+ * Version:           6.1.2
  */
 
 // Exit if accessed directly
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Enqueue chosen
+ * Include the required files
  *
  * @since 0.1.0
  */
@@ -27,6 +31,7 @@ function _wp_chosen() {
 
 	// Common files
 	require_once $plugin_path . 'includes/admin.php';
+	require_once $plugin_path . 'includes/sponsor.php';
 	require_once $plugin_path . 'includes/hooks.php';
 }
 add_action( 'plugins_loaded', '_wp_chosen' );
@@ -52,5 +57,5 @@ function wp_chosen_get_plugin_url() {
 function wp_chosen_get_asset_version() {
 	return defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG
 		? time()
-		: 202103100002;
+		: 202105290001;
 }

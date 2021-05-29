@@ -1,9 +1,16 @@
 === WP Chosen ===
-Contributors: johnjamesjacoby, stuttter
-Tags: jquery, select, chosen
+Author:            Triple J Software, Inc.
+Author URI:        https://jjj.software
+Donate link:       https://buy.stripe.com/7sI3cd2tK1Cy2lydQR
+Plugin URI:        https://wordpress.org/plugins/wp-chosen
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+License:           GPLv2 or later
+Contributors:      johnjamesjacoby
+Tags:              jquery, select, chosen
+Requires PHP:      7.0
 Requires at least: 5.7
-Tested up to: 5.8
-Stable tag: 6.1.1
+Tested up to:      5.8
+Stable tag:        6.1.2
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -13,17 +20,26 @@ WP Chosen implements the [Chosen jQuery Plugin](https://jjj.github.io/chosen/) f
 
 [Chosen](https://jjj.github.io/chosen/) makes long, unwieldy select boxes much more user-friendly.
 
-= Also checkout =
+= Recommended Plugins =
 
+If you like this plugin, you'll probably like these!
+
+* [WP User Profiles](https://wordpress.org/plugins/wp-user-profiles/ "A sophisticated way to edit users in WordPress.")
 * [WP User Activity](https://wordpress.org/plugins/wp-user-activity/ "The best way to log activity in WordPress.")
 * [WP User Avatars](https://wordpress.org/plugins/wp-user-avatars/ "Allow users to upload avatars or choose them from your media library.")
 * [WP User Groups](https://wordpress.org/plugins/wp-user-groups/ "Group users together with taxonomies & terms.")
-* [WP User Profiles](https://wordpress.org/plugins/wp-user-profiles/ "A sophisticated way to edit users in WordPress.")
-* [WP Term Order](https://wordpress.org/plugins/wp-term-order/ "Sort taxonomy terms, your way.")
+* [WP User Signups](https://wordpress.org/plugins/wp-user-signups/ "The best way to manage user & site sign-ups in WordPress.")
 * [WP Term Authors](https://wordpress.org/plugins/wp-term-authors/ "Authors for categories, tags, and other taxonomy terms.")
 * [WP Term Colors](https://wordpress.org/plugins/wp-term-colors/ "Pretty colors for categories, tags, and other taxonomy terms.")
+* [WP Term Families](https://wordpress.org/plugins/wp-term-families/ "Associate taxonomy terms with other taxonomy terms.")
 * [WP Term Icons](https://wordpress.org/plugins/wp-term-icons/ "Pretty icons for categories, tags, and other taxonomy terms.")
+* [WP Term Images](https://wordpress.org/plugins/wp-term-images/ "Pretty images for categories, tags, and other taxonomy terms.")
+* [WP Term Locks](https://wordpress.org/plugins/wp-term-locks/ "Protect categories, tags, and other taxonomy terms from being edited or deleted.")
+* [WP Term Order](https://wordpress.org/plugins/wp-term-order/ "Sort taxonomy terms, your way.")
 * [WP Term Visibility](https://wordpress.org/plugins/wp-term-visibility/ "Visibilities for categories, tags, and other taxonomy terms.")
+* [WP Media Categories](https://wordpress.org/plugins/wp-media-categories/ "Add categories to media & attachments.")
+* [WP Pretty Filters](https://wordpress.org/plugins/wp-pretty-filters/ "Makes post filters better match what's already in Media & Attachments.")
+* [WP Chosen](https://wordpress.org/plugins/wp-chosen/ "Make long, unwieldy select boxes much more user-friendly.")
 
 == Screenshots ==
 
@@ -106,13 +122,14 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 
 = Where can I get support? =
 
-* Forums: https://wordpress.org/support/plugin/wp-chosen/
-
-= Where can I find documentation? =
-
-https://github.com/stuttter/wp-chosen/
+* Community: https://wordpress.org/support/plugin/wp-chosen
+* Development: https://github.com/stuttter/wp-chosen/discussions
 
 == Changelog ==
+
+= 6.1.2 - 2021/05/29 =
+* Update author info
+* Add sponsor link
 
 = 6.1.1 - 2021/03/10 =
 * Tweak third-party plugin compatibility

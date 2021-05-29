@@ -8,6 +8,7 @@ WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.io/chosen/) fo
 
 * Download and install using the built in WordPress plugin installer.
 * Activate in the "Plugins" area of your admin by clicking the "Activate" link.
+* Consider sponsoring future development by clicking "Sponsor".
 * No further setup or configuration is necessary.
 
 # Development
@@ -55,8 +56,9 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 
 ### Where can I get support?
 
-* Basic: https://wordpress.org/support/plugin/wp-chosen/
+* Community: https://wordpress.org/support/plugin/wp-chosen
+* Development: https://github.com/stuttter/wp-chosen/discussions
 
-### Can I contribute?
+### Contributing
 
-Yes, please!
+Please [open a new issue](/pull/new/master) to discuss whether the feature is a good fit for the project. Once you've decided to work on a pull request, please follow the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/).
