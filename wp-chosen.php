@@ -10,9 +10,9 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wp-chosen
  * Domain Path:       /wp-chosen/assets/lang/
- * Requires at least: 5.7
- * Requires PHP:      7.0
- * Tested up to:      5.8
+ * Requires at least: 6.0
+ * Requires PHP:      7.2
+ * Tested up to:      7.0
  * Version:           6.1.2
  */
 
@@ -57,5 +57,5 @@ function wp_chosen_get_plugin_url() {
 function wp_chosen_get_asset_version() {
 	return defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG
 		? time()
-		: 202105290001;
+		: 202512100001;
 }
