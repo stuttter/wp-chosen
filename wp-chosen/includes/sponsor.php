@@ -21,6 +21,9 @@ add_action( 'admin_init', function() {
 		return;
 	}
 
+	// Currently not asking for sponsorships
+	return;
+
 	// Plugin base name
 	$basename = 'wp-chosen/wp-chosen.php';
 

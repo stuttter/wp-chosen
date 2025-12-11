@@ -5,12 +5,17 @@ body.js select,
 body.js div.chosen-container {
   min-width: 58px;
   max-width: 300px;
+  margin-right: 2px;
 }
 /* WordPress Core overrides */
 .wrap .actions:not(.bulkactions),
 .media-toolbar,
 .tablenav .actions {
   overflow: visible !important;
+}
+.tablenav .actions .chosen-container,
+.post-type-attachment .wp-filter .chosen-container {
+  margin: 0 6px 0 0;
 }
 /* WordPress Customizer select widths look better like this for now */
 .chosen-container.chosen-container-multi,

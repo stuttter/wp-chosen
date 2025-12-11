@@ -13,7 +13,7 @@
  * Requires at least: 6.0
  * Requires PHP:      7.2
  * Tested up to:      7.0
- * Version:           6.1.2
+ * Version:           6.2.0
  */
 
 // Exit if accessed directly
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 0.1.0
  */
-function _wp_chosen() {
+function wp_chosen_start() {
 
 	// Get the plugin path
 	$plugin_path = plugin_dir_path( __FILE__ ) . 'wp-chosen/';
@@ -34,7 +34,7 @@ function _wp_chosen() {
 	require_once $plugin_path . 'includes/sponsor.php';
 	require_once $plugin_path . 'includes/hooks.php';
 }
-add_action( 'plugins_loaded', '_wp_chosen' );
+add_action( 'plugins_loaded', 'wp_chosen_start' );
 
 /**
  * Return the plugin URL

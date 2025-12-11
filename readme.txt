@@ -1,16 +1,15 @@
 === WP Chosen ===
 Author:            Triple J Software, Inc.
 Author URI:        https://jjj.software
-Donate link:       https://buy.stripe.com/7sI3cd2tK1Cy2lydQR
 Plugin URI:        https://wordpress.org/plugins/wp-chosen
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 License:           GPLv2 or later
 Contributors:      johnjamesjacoby
 Tags:              jquery, select, chosen
-Requires PHP:      7.0
-Requires at least: 5.7
-Tested up to:      5.8
-Stable tag:        6.1.2
+Requires PHP:      7.2
+Requires at least: 6.0
+Tested up to:      7.0
+Stable tag:        6.2.0
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -126,6 +125,10 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 * Development: https://github.com/stuttter/wp-chosen/discussions
 
 == Changelog ==
+
+= 6.2.0 - 2025/12/10 =
+* Update Chosen library
+* Fix some errors from Plugin Check
 
 = 6.1.2 - 2021/05/29 =
 * Update author info

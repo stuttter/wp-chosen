@@ -14,5 +14,5 @@ add_action( 'admin_enqueue_scripts',              'wp_chosen_enqueue_assets', -9
 add_action( 'customize_controls_enqueue_scripts', 'wp_chosen_enqueue_assets', -99 );
 
 // options-reading.php juggle
-add_action( 'admin_head',               'wp_options_reading_juggle', -99 );
-add_action( 'load-options-reading.php', 'wp_options_reading_enqueue'     );
+add_action( 'admin_head',               'wp_chosen_options_reading_juggle', -99 );
+add_action( 'load-options-reading.php', 'wp_chosen_options_reading_enqueue'     );
