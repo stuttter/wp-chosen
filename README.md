@@ -13,7 +13,15 @@ WP Chosen implements the [Chosen jQuery Plugin](http://jjj.github.io/chosen/) fo
 
 # Development
 
-`npm install`
+`composer install`
+
+Use this command to install the PHP test dependencies.
+
+`composer test`
+
+Use this command to run the behavior characterization suite.
+
+`npm ci`
 
 Use this command to install PostCSS and all other development dependencies
 
@@ -25,9 +33,17 @@ Use this command to remap colors to the latest WordPress palette
 
 Use this command to compile human-readable and unminified CSS files
 
+`npm run build:check`
+
+Use this command to compile the stylesheet and verify that committed generated
+runtime assets are current. WP Chosen always enqueues `wp-chosen.css`; the
+historical `wp-chosen.min.css` file is not loaded by the plugin.
+
 `npm run prod`
 
-Use this command to compile minified CSS files for production environments
+This is the legacy minification command. The current locked cssnano release does
+not reproduce the historical minified file byte-for-byte, so do not commit its
+output without a focused build-tool migration and review.
 
 
 # FAQ
@@ -61,4 +77,4 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 
 ### Contributing
 
-Please [open a new issue](/pull/new/master) to discuss whether the feature is a good fit for the project. Once you've decided to work on a pull request, please follow the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/).
+Please [open a new issue](https://github.com/stuttter/wp-chosen/issues/new/choose) to discuss whether the feature is a good fit for the project. Once you've decided to work on a pull request, please follow the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/coding-standards/).

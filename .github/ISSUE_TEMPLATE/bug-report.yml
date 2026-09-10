@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible problem in WP Chosen.
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Report security vulnerabilities privately through GitHub Security Advisories.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: input
+    id: screen
+    attributes:
+      label: Affected screen and select field
+      description: Include the wp-admin or Customizer screen and the select element's relevant ID or classes.
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: WP Chosen version
+    validations:
+      required: true
+  - type: input
+    id: wordpress-version
+    attributes:
+      label: WordPress version
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include active plugins, admin color scheme, browser, viewport size, and sanitized logs. Never include credentials or personal data.
