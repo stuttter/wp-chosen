@@ -25,10 +25,6 @@ Use this command to run the behavior characterization suite.
 
 Use this command to install PostCSS and all other development dependencies
 
-`npm run remap`
-
-Use this command to remap colors to the latest WordPress palette
-
 `npm run dev`
 
 Use this command to compile human-readable and unminified CSS files
