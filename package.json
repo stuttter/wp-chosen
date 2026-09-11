@@ -1,6 +1,6 @@
 {
 	"name": "wp-chosen",
-	"version": "6.1.1",
+	"version": "6.2.0",
 	"description": "Makes unwieldy select boxes more user-friendly",
 	"license": "GPL-2.0-or-later",
 	"repository": {
@@ -12,13 +12,14 @@
 	},
 	"homepage": "https://jjj.software",
 	"engines": {
-		"node": ">=8.0.0",
-		"npm": ">=6.0.0"
+		"node": ">=18.0.0",
+		"npm": ">=9.0.0"
 	},
 	"scripts": {
-		"dev": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.css --env dev --config wp-chosen/assets/css/postcss-configs/main; prettier wp-chosen/assets/css/wp-chosen.css --write;",
-		"prod": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.min.css --env prod  --config wp-chosen/assets/css/postcss-configs/main",
-		"remap": "postcss wp-chosen/assets/css/scss/general.scss --replace --config wp-chosen/assets/css/postcss-configs/remap; postcss wp-chosen/assets/css/scss/schemes/default.scss --replace --config wp-chosen/assets/css/postcss-configs/remap; postcss wp-chosen/assets/css/scss/schemes/fresh.scss --replace --config wp-chosen/assets/css/postcss-configs/remap;"
+		"build": "npm run dev",
+		"build:check": "npm run build && git diff --exit-code -- wp-chosen/assets/css/wp-chosen.css wp-chosen/assets/css/wp-chosen.css.map",
+		"dev": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.css --env dev --config wp-chosen/assets/css/postcss-configs/main && prettier wp-chosen/assets/css/wp-chosen.css --write",
+		"prod": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.min.css --env prod  --config wp-chosen/assets/css/postcss-configs/main"
 	},
 	"browserslist": [
 		"> 2%"
@@ -27,13 +28,11 @@
 		"autoprefixer": "^10.2.4",
 		"cssnano": "^6.0.0",
 		"postcss": "^8.5.23",
-		"postcss-advanced-variables": "^3.0.1",
+		"postcss-advanced-variables": "^5.0.0",
 		"postcss-cli": "^8.3.1",
 		"postcss-custom-media": "^8.0.0",
 		"postcss-import": "^14.0.0",
-		"postcss-map-get": "^0.3.0",
 		"postcss-nested": "^5.0.4",
-		"postcss-palettize-colors": "git+https://github.com/ryelle/postcss-palettize-colors.git",
 		"postcss-scss": "^3.0.4",
 		"postcss-sort-media-queries": "^3.4.3",
 		"prettier": "2.2.1"

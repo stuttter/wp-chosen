@@ -5,6 +5,11 @@
 	overflow: visible !important;
 }
 
+.tablenav .actions .chosen-container,
+.post-type-attachment .wp-filter .chosen-container {
+	margin: 0 6px 0 0;
+}
+
 /* WordPress Customizer select widths look better like this for now */
 .chosen-container.chosen-container-multi,
 #customize-theme-controls .chosen-container {
