@@ -6,7 +6,7 @@ License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 License:           GPLv2 or later
 Contributors:      johnjamesjacoby
 Tags:              jquery, select, chosen
-Requires PHP:      7.2
+Requires PHP:      7.4
 Requires at least: 6.0
 Tested up to:      7.0
 Stable tag:        6.2.0

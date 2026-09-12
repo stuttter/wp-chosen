@@ -2,6 +2,10 @@
 
 The authoritative release history is maintained in `readme.txt`.
 
+## Unreleased
+
+- Require PHP 7.4 or newer.
+
 ## 6.2.0 (2025-12-10)
 
 - Update the Chosen library.

@@ -22,3 +22,8 @@ criteria in a GitHub issue. Report suspected vulnerabilities privately through
 
 AI-assisted contributions are welcome, but the contributor remains responsible
 for understanding and validating the result.
+
+## Development requirements
+
+The plugin and its Composer development toolchain require PHP 7.4 or newer.
+Production Composer installs should omit development dependencies.

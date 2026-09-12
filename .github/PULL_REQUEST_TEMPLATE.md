@@ -5,7 +5,7 @@ Describe the observable change and why it belongs in WP Chosen.
 ## Risk and compatibility
 
 - [ ] Public functions, hooks, filters, handles, selectors, and asset URLs remain compatible.
-- [ ] PHP 7.2 and WordPress 6.0 compatibility are preserved.
+- [ ] PHP 7.4 and WordPress 6.0 compatibility are preserved.
 - [ ] Administration, Customizer, mobile, and third-party select impact is described.
 - [ ] Dependency, generated-asset, automation, and release implications are identified.
 
