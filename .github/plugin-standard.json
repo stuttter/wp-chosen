@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stuttter/.github/main/schema/plugin-standard.schema.json",
+  "slug": "wp-chosen",
+  "main_file": "wp-chosen.php",
+  "risk": "elevated",
+  "minimum_php": "7.4",
+  "minimum_wordpress": "6.0",
+  "tested_wordpress": "7.0",
+  "wordpress_org": true,
+  "multisite": false,
+  "release_branch": "master",
+  "php_matrix": [
+    "7.4",
+    "8.0",
+    "8.2",
+    "8.4"
+  ]
+}
