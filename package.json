@@ -33,7 +33,7 @@
 		"postcss-custom-media": "^8.0.0",
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.4",
-		"postcss-scss": "^3.0.4",
+		"postcss-scss": "^4.0.9",
 		"postcss-sort-media-queries": "^3.4.3",
 		"prettier": "2.2.1"
 	}
