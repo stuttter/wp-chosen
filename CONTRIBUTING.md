@@ -27,3 +27,7 @@ for understanding and validating the result.
 
 The plugin and its Composer development toolchain require PHP 7.4 or newer.
 Production Composer installs should omit development dependencies.
+
+The CSS build toolchain requires Node.js 18 or newer and npm 9 or newer. Use
+`npm ci` so local builds use the dependency versions recorded in
+`package-lock.json`.
