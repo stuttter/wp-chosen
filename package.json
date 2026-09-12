@@ -34,7 +34,7 @@
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.4",
 		"postcss-scss": "^3.0.4",
-		"postcss-sort-media-queries": "^3.4.3",
+		"postcss-sort-media-queries": "^6.7.1",
 		"prettier": "2.2.1"
 	}
 }
