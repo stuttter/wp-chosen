@@ -16,10 +16,12 @@
 		"npm": ">=9.0.0"
 	},
 	"scripts": {
-		"build": "npm run dev",
-		"build:check": "npm run build && git diff --exit-code -- wp-chosen/assets/css/wp-chosen.css wp-chosen/assets/css/wp-chosen.css.map",
-		"dev": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.css --env dev --config wp-chosen/assets/css/postcss-configs/main && prettier wp-chosen/assets/css/wp-chosen.css --write",
-		"prod": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.min.css --env prod  --config wp-chosen/assets/css/postcss-configs/main"
+		"build": "npm run dev && npm run prod",
+		"build:check": "npm run build && npm run generated:check && npm run vendor:check && git diff --exit-code -- wp-chosen/assets/css/wp-chosen.css wp-chosen/assets/css/wp-chosen.css.map wp-chosen/assets/css/wp-chosen.min.css",
+		"dev": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.css --env dev --config wp-chosen/assets/css/postcss-configs/main",
+		"generated:check": "node bin/check-generated-assets.mjs",
+		"prod": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.min.css --env prod --config wp-chosen/assets/css/postcss-configs/main",
+		"vendor:check": "node bin/check-vendored-assets.mjs"
 	},
 	"browserslist": [
 		"> 2%"

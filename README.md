@@ -23,23 +23,34 @@ Use this command to run the behavior characterization suite.
 
 `npm ci`
 
-Use this command to install PostCSS and all other development dependencies
+Use this command to install PostCSS and all other development dependencies.
+The build toolchain currently requires Node.js 18 or newer and npm 9 or newer.
+
+`npm run build`
+
+Use this command to compile both the human-readable and minified stylesheets.
 
 `npm run dev`
 
-Use this command to compile human-readable and unminified CSS files
+Use this command to compile the human-readable stylesheet and its source map in
+one source-map-aware PostCSS pass.
 
 `npm run build:check`
 
 Use this command to compile the stylesheet and verify that committed generated
-runtime assets are current. WP Chosen always enqueues `wp-chosen.css`; the
-historical `wp-chosen.min.css` file is not loaded by the plugin.
+runtime assets remain tracked and current. The check covers the human-readable
+stylesheet, its corresponding source map, and the minified stylesheet. It also
+verifies pinned SHA-256 digests for the vendored Chosen CSS and JavaScript,
+whose upstream build sources are not part of this repository. WP Chosen
+currently enqueues `wp-chosen.css`; `wp-chosen.min.css` remains a tracked
+distribution asset.
 
 `npm run prod`
 
-This is the legacy minification command. The current locked cssnano release does
-not reproduce the historical minified file byte-for-byte, so do not commit its
-output without a focused build-tool migration and review.
+Use this command to compile only the minified stylesheet.
+
+The synchronized minified output restores the administration-control margins
+and upward drop-shadow direction already present in the SCSS and readable CSS.
 
 
 # FAQ
