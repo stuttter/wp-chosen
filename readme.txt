@@ -9,7 +9,7 @@ Tags:              jquery, select, chosen
 Requires PHP:      7.4
 Requires at least: 6.0
 Tested up to:      7.1
-Stable tag:        6.2.0
+Stable tag:        6.3.0
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -125,6 +125,12 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 * Development: https://github.com/stuttter/wp-chosen/discussions
 
 == Changelog ==
+
+= 6.3.0 - 2026/09/14 =
+* Improve spacing for enhanced selects in administration filters
+* Require PHP 7.4 or newer
+* Modernize project tests and release checks
+* Keep generated and vendored stylesheet assets verified and synchronized
 
 = 6.2.0 - 2025/12/10 =
 * Update Chosen library

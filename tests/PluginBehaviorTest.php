@@ -14,7 +14,7 @@ final class PluginBehaviorTest extends TestCase {
 	}
 
 	public function test_production_asset_version_is_stable(): void {
-		$this->assertSame( 202512100001, wp_chosen_get_asset_version() );
+		$this->assertSame( 202609140001, wp_chosen_get_asset_version() );
 	}
 
 	public function test_assets_preserve_handles_dependencies_and_footer_loading(): void {
@@ -26,15 +26,15 @@ final class PluginBehaviorTest extends TestCase {
 
 		$this->assertSame(
 			array(
-				array( 'custom-chosen', 'https://example.test/plugins/wp-chosen/assets/css/chosen.min.css', array(), 202512100001 ),
-				array( 'wp-chosen', 'https://example.test/plugins/wp-chosen/assets/css/wp-chosen.css', array( 'custom-chosen' ), 202512100001 ),
+				array( 'custom-chosen', 'https://example.test/plugins/wp-chosen/assets/css/chosen.min.css', array(), 202609140001 ),
+				array( 'wp-chosen', 'https://example.test/plugins/wp-chosen/assets/css/wp-chosen.css', array( 'custom-chosen' ), 202609140001 ),
 			),
 			$GLOBALS['wpc_test']['calls']['wp_enqueue_style']
 		);
 		$this->assertSame(
 			array(
-				array( 'custom-chosen', 'https://example.test/plugins/wp-chosen/assets/js/chosen.jquery.min.js', array( 'jquery' ), 202512100001, true ),
-				array( 'wp-chosen', 'https://example.test/plugins/wp-chosen/assets/js/wp-chosen.js', array( 'custom-chosen' ), 202512100001, true ),
+				array( 'custom-chosen', 'https://example.test/plugins/wp-chosen/assets/js/chosen.jquery.min.js', array( 'jquery' ), 202609140001, true ),
+				array( 'wp-chosen', 'https://example.test/plugins/wp-chosen/assets/js/wp-chosen.js', array( 'custom-chosen' ), 202609140001, true ),
 			),
 			$GLOBALS['wpc_test']['calls']['wp_enqueue_script']
 		);
