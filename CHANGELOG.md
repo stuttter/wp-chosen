@@ -4,7 +4,10 @@ The authoritative release history is maintained in `readme.txt`.
 
 ## Unreleased
 
+## 6.3.0 (2026-09-14)
+
 - Require PHP 7.4 or newer.
+- Improve spacing for enhanced selects in administration filters.
 - Keep the tracked minified stylesheet synchronized with its SCSS sources.
 - Verify every generated stylesheet during asset builds.
 - Preserve accurate source mappings by avoiding post-generation CSS rewrites.
