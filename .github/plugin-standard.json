@@ -5,7 +5,7 @@
   "risk": "elevated",
   "minimum_php": "7.4",
   "minimum_wordpress": "6.0",
-  "tested_wordpress": "7.0",
+  "tested_wordpress": "7.1",
   "wordpress_org": true,
   "multisite": false,
   "release_branch": "master",
