@@ -8,7 +8,7 @@ Contributors:      johnjamesjacoby
 Tags:              jquery, select, chosen
 Requires PHP:      7.4
 Requires at least: 6.0
-Tested up to:      7.0
+Tested up to:      7.1
 Stable tag:        6.2.0
 
 Make long, unwieldy select boxes much more user-friendly.
