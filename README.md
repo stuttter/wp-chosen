@@ -24,7 +24,8 @@ Use this command to run the behavior characterization suite.
 `npm ci`
 
 Use this command to install PostCSS and all other development dependencies.
-The build toolchain currently requires Node.js 18 or newer and npm 9 or newer.
+The build toolchain requires Node.js 22.22.3, Node.js 24.15.0, or a newer
+compatible release, plus npm 10.9 or newer.
 
 `npm run build`
 
