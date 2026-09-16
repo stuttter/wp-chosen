@@ -7,7 +7,7 @@ License:           GPLv2 or later
 Contributors:      johnjamesjacoby
 Tags:              jquery, select, chosen
 Requires PHP:      7.4
-Requires at least: 6.0
+Requires at least: 6.4
 Tested up to:      7.1
 Stable tag:        6.3.0
 

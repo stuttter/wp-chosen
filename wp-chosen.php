@@ -10,7 +10,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wp-chosen
  * Domain Path:       /wp-chosen/assets/lang/
- * Requires at least: 6.0
+ * Requires at least: 6.4
  * Requires PHP:      7.4
  * Tested up to:      7.1
  * Version:           6.3.0

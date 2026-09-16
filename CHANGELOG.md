@@ -4,6 +4,8 @@ The authoritative release history is maintained in `readme.txt`.
 
 ## Unreleased
 
+- Require WordPress 6.4 or newer.
+
 ## 6.3.0 (2026-09-14)
 
 - Require PHP 7.4 or newer.
