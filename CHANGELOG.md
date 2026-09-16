@@ -4,6 +4,8 @@ The authoritative release history is maintained in `readme.txt`.
 
 ## Unreleased
 
+## 6.3.1 (2026-09-16)
+
 - Require WordPress 6.4 or newer.
 
 ## 6.3.0 (2026-09-14)
