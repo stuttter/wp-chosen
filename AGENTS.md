@@ -2,7 +2,7 @@
 
 ## Compatibility
 
-- Preserve PHP 7.2 and WordPress 6.0 compatibility unless a dedicated pull
+- Preserve PHP 7.4 and WordPress 6.4 compatibility unless a dedicated pull
   request explicitly changes the published minimums.
 - Treat broad administration selectors, third-party enhanced selects, the
   Customizer, generated assets, and the Reading screen override as elevated-risk
