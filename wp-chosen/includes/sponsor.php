@@ -13,17 +13,11 @@ namespace JJJ\Plugins\Chosen;
 // Exit if accessed directly
 defined( 'ABSPATH' ) || exit;
 
-// Add filters when admin initializes
+// Keep the existing hook registered; sponsorship links remain disabled.
 add_action( 'admin_init', function() {
-
-	// Bail if disabled
 	if ( defined( 'JJJ_NO_SPONSOR' ) && JJJ_NO_SPONSOR ) {
 		return;
 	}
-
-	// Currently not asking for sponsorships
-	return;
-
 } );
 
 /**
