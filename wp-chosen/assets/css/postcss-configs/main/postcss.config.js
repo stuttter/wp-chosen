@@ -1,4 +1,10 @@
-module.exports = cfg => {
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import advancedVariables from 'postcss-advanced-variables';
+import nested from 'postcss-nested';
+import sortMediaQueries from 'postcss-sort-media-queries';
+
+export default cfg => {
 
 	const
 		dev  = cfg.env          === 'dev',
@@ -8,11 +14,11 @@ module.exports = cfg => {
 		map:     dev  ? { inline: false } : false,
 		parser:  scss ? 'postcss-scss'    : false,
 		plugins: [
-			require('postcss-advanced-variables')(),
-			require('postcss-nested')(),
-			require('postcss-sort-media-queries')(),
-			require('autoprefixer')(),
-			dev ? null : require('cssnano')()
+			advancedVariables(),
+			nested(),
+			sortMediaQueries(),
+			autoprefixer(),
+			dev ? null : cssnano()
 		]
 	};
 };
