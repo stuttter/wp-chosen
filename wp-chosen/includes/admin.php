@@ -13,6 +13,8 @@ defined( 'ABSPATH' ) || exit;
  * Enqueue chosen
  *
  * @since 0.1.0
+ *
+ * @return void
  */
 function wp_chosen_enqueue_assets() {
 
@@ -41,6 +43,8 @@ function wp_chosen_enqueue_assets() {
  *
  * @link https://github.com/stuttter/wp-chosen/issues/2 Bugfix
  * @since 0.4.0
+ *
+ * @return void
  */
 function wp_chosen_options_reading_juggle() {
 	remove_action( 'admin_head', 'options_reading_add_js' );
@@ -51,6 +55,8 @@ function wp_chosen_options_reading_juggle() {
  *
  * @link https://github.com/stuttter/wp-chosen/issues/2 Bugfix
  * @since 0.4.0
+ *
+ * @return void
  */
 function wp_chosen_options_reading_enqueue() {
 	add_action( 'admin_head', 'wp_chosen_options_reading_add_js' );
@@ -61,6 +67,8 @@ function wp_chosen_options_reading_enqueue() {
  *
  * @link https://github.com/stuttter/wp-chosen/issues/2 Bugfix
  * @since 0.4.0
+ *
+ * @return void
  */
 function wp_chosen_options_reading_add_js() {
 ?>

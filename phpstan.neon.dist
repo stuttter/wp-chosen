@@ -1,0 +1,15 @@
+parameters:
+    level: 7
+    phpVersion: 70400
+    dynamicConstantNames:
+        SCRIPT_DEBUG: bool
+    paths:
+        - wp-chosen.php
+        - wp-chosen
+    scanFiles:
+        - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
+    stubFiles:
+        - phpstan-wordpress-versions.stub
+    tmpDir: build/phpstan
+    parallel:
+        maximumNumberOfProcesses: 1

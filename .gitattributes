@@ -12,6 +12,8 @@
 /package.json export-ignore
 /package-lock.json export-ignore
 /phpunit.xml.dist export-ignore
+/phpstan.neon.dist export-ignore
+/phpstan-wordpress-versions.stub export-ignore
 /tests export-ignore
 /wp-chosen/assets/css/postcss-configs export-ignore
 /wp-chosen/assets/css/scss export-ignore
