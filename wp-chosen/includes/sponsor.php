@@ -13,30 +13,18 @@ namespace JJJ\Plugins\Chosen;
 // Exit if accessed directly
 defined( 'ABSPATH' ) || exit;
 
-// Add filters when admin initializes
+// Keep the existing hook registered; sponsorship links remain disabled.
 add_action( 'admin_init', function() {
-
-	// Bail if disabled
 	if ( defined( 'JJJ_NO_SPONSOR' ) && JJJ_NO_SPONSOR ) {
 		return;
 	}
-
-	// Currently not asking for sponsorships
-	return;
-
-	// Plugin base name
-	$basename = 'wp-chosen/wp-chosen.php';
-
-	// Add filters
-	add_filter( "plugin_action_links_{$basename}",               __NAMESPACE__ . '\\filter_plugin_action_links', 20 );
-	add_filter( "network_admin_plugin_action_links_{$basename}", __NAMESPACE__ . '\\filter_plugin_action_links', 20 );
 } );
 
 /**
  * Filter plugin action links, and add a sponsorship link.
  *
- * @param array $actions
- * @return array
+ * @param array<string, string> $actions
+ * @return array<string, string>
  */
 function filter_plugin_action_links( $actions = array() ) {
 

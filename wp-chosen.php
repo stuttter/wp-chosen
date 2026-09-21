@@ -23,6 +23,8 @@ defined( 'ABSPATH' ) || exit;
  * Include the required files
  *
  * @since 0.1.0
+ *
+ * @return void
  */
 function wp_chosen_start() {
 
