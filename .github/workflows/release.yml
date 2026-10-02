@@ -12,6 +12,14 @@ on:
         description: Full commit SHA at the protected release branch head.
         required: true
         type: string
+      notes:
+        description: Exact reviewed UTF-8 release notes.
+        required: true
+        type: string
+      notes_sha256:
+        description: SHA256 of the exact reviewed notes bytes.
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -27,4 +35,6 @@ jobs:
     with:
       version: ${{ inputs.version }}
       commit: ${{ inputs.commit }}
+      release-notes: ${{ inputs.notes }}
+      release-notes-sha256: ${{ inputs.notes_sha256 }}
       release-branch: "master"
