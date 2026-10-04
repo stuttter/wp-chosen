@@ -43,13 +43,13 @@ function wp_chosen_enqueue_assets() {
 	 */
 	wp_add_inline_script(
 		$handle,
-		'window.wpChosenAmdDefineStack = window.wpChosenAmdDefineStack || []; window.wpChosenAmdDefineStack.push( window.define ); window.define = undefined;',
+		'( function() { window.wpChosenAmdDefineStack = window.wpChosenAmdDefineStack || []; window.wpChosenAmdDefineStack.push( { hadOwn: Object.prototype.hasOwnProperty.call( window, \'define\' ), value: window.define } ); window.define = undefined; }() );',
 		'before'
 	);
 
 	wp_add_inline_script(
 		$handle,
-		'window.define = window.wpChosenAmdDefineStack.pop(); if ( ! window.wpChosenAmdDefineStack.length ) { delete window.wpChosenAmdDefineStack; }',
+		'( function() { var state = window.wpChosenAmdDefineStack.pop(); if ( state.hadOwn ) { window.define = state.value; } else { delete window.define; } if ( ! window.wpChosenAmdDefineStack.length ) { delete window.wpChosenAmdDefineStack; } }() );',
 		'after'
 	);
 
