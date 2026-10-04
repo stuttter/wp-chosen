@@ -38,6 +38,21 @@ final class PluginBehaviorTest extends TestCase {
 			),
 			$GLOBALS['wpc_test']['calls']['wp_enqueue_script']
 		);
+		$this->assertSame(
+			array(
+				array(
+					'custom-chosen',
+					'window.wpChosenAmdDefineStack = window.wpChosenAmdDefineStack || []; window.wpChosenAmdDefineStack.push( window.define ); window.define = undefined;',
+					'before',
+				),
+				array(
+					'custom-chosen',
+					'window.define = window.wpChosenAmdDefineStack.pop(); if ( ! window.wpChosenAmdDefineStack.length ) { delete window.wpChosenAmdDefineStack; }',
+					'after',
+				),
+			),
+			$GLOBALS['wpc_test']['calls']['wp_add_inline_script']
+		);
 	}
 
 	public function test_reading_screen_replaces_core_script_at_the_same_hook(): void {

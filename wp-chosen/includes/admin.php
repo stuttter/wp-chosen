@@ -35,6 +35,24 @@ function wp_chosen_enqueue_assets() {
 
 	// Scripts
 	wp_enqueue_script( $handle,     $url . 'assets/js/chosen.jquery.min.js', array( 'jquery' ), $ver, true );
+
+	/*
+	 * Chosen 4 ships an AMD-aware browser bundle. WordPress plugins can expose
+	 * an AMD loader globally, but WP Chosen loads this file as a normal script
+	 * and needs it to register directly on the global jQuery instance.
+	 */
+	wp_add_inline_script(
+		$handle,
+		'window.wpChosenAmdDefineStack = window.wpChosenAmdDefineStack || []; window.wpChosenAmdDefineStack.push( window.define ); window.define = undefined;',
+		'before'
+	);
+
+	wp_add_inline_script(
+		$handle,
+		'window.define = window.wpChosenAmdDefineStack.pop(); if ( ! window.wpChosenAmdDefineStack.length ) { delete window.wpChosenAmdDefineStack; }',
+		'after'
+	);
+
 	wp_enqueue_script( 'wp-chosen', $url . 'assets/js/wp-chosen.js',         array( $handle  ), $ver, true );
 }
 

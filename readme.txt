@@ -128,6 +128,8 @@ var chosen_selects = ' select:not(#metakeyselect, [name^=acf_], [name^=edd], [na
 
 = 6.4.0 - 2026/10/04 =
 * Update the bundled Chosen library to 4.0.0
+* Preserve WordPress search styling for Chosen 4 search inputs
+* Preserve Chosen registration when another plugin exposes an AMD loader
 
 = 6.3.1 - 2026/09/16 =
 * Require WordPress 6.4 or newer
