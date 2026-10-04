@@ -55,6 +55,16 @@ function wp_enqueue_script( ...$arguments ) {
 	return wpc_test_call( __FUNCTION__, $arguments );
 }
 
+/**
+ * Record inline script registration calls.
+ *
+ * @param mixed ...$arguments Function arguments.
+ * @return null
+ */
+function wp_add_inline_script( ...$arguments ) {
+	return wpc_test_call( __FUNCTION__, $arguments );
+}
+
 wpc_test_reset();
 
 require_once dirname( __DIR__ ) . '/wp-chosen.php';

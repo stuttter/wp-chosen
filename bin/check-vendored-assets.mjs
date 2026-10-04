@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const assets = new Map([
-	['wp-chosen/assets/css/chosen.min.css', 'f56a9d3251cc74bd77f9c555555a0bb63dcb35e92616dc5f167108bf4066376b'],
-	['wp-chosen/assets/js/chosen.jquery.min.js', 'bcc5e08f69727b8ce8b7d27bd431ce4b7089ba3a81858bd51d22bc3cad6efc26'],
+	['wp-chosen/assets/css/chosen.min.css', '24ff326610d42e825948574bc055367a906155e4c7b4b938c3646df1f3b9b304'],
+	['wp-chosen/assets/js/chosen.jquery.min.js', 'cc1fb7d4aef1be1ae2d0883a371c2dd50246633e9a83ee9020cb55a1e807ff41'],
 ]);
 
 let failed = false;
