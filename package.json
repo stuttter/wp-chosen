@@ -17,8 +17,9 @@
 		"npm": ">=10.9.0"
 	},
 	"scripts": {
+		"amd:check": "node bin/check-amd-loader.mjs",
 		"build": "npm run dev && npm run prod",
-		"build:check": "npm run build && npm run generated:check && npm run vendor:check && git diff --exit-code -- wp-chosen/assets/css/wp-chosen.css wp-chosen/assets/css/wp-chosen.css.map wp-chosen/assets/css/wp-chosen.min.css",
+		"build:check": "npm run build && npm run generated:check && npm run vendor:check && npm run amd:check && git diff --exit-code -- wp-chosen/assets/css/wp-chosen.css wp-chosen/assets/css/wp-chosen.css.map wp-chosen/assets/css/wp-chosen.min.css",
 		"dev": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.css --env dev --config wp-chosen/assets/css/postcss-configs/main",
 		"generated:check": "node bin/check-generated-assets.mjs",
 		"prod": "postcss wp-chosen/assets/css/scss/wp-chosen.scss --output wp-chosen/assets/css/wp-chosen.min.css --env prod --config wp-chosen/assets/css/postcss-configs/main",
