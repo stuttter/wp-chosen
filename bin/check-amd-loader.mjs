@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import test from 'node:test';
 import vm from 'node:vm';
 
 const adminSource = await readFile( new URL( '../wp-chosen/includes/admin.php', import.meta.url ), 'utf8' );
@@ -36,25 +35,23 @@ function executeChosen( current ) {
 	vm.runInContext( inlineScript( 'after' ), current.context );
 }
 
-test( 'registers Chosen globally and restores an AMD loader', () => {
-	const define = function() {};
-	define.amd = {};
-	const current = runtime( define );
+const define = function() {};
+define.amd = {};
+const withLoader = runtime( define );
 
-	executeChosen( current );
+executeChosen( withLoader );
 
-	assert.equal( typeof current.jQuery.fn.chosen, 'function' );
-	assert.strictEqual( current.window.define, define );
-	assert.equal( Object.hasOwn( current.window, 'define' ), true );
-	assert.equal( Object.hasOwn( current.window, 'wpChosenAmdDefineStack' ), false );
-} );
+assert.equal( typeof withLoader.jQuery.fn.chosen, 'function' );
+assert.strictEqual( withLoader.window.define, define );
+assert.equal( Object.hasOwn( withLoader.window, 'define' ), true );
+assert.equal( Object.hasOwn( withLoader.window, 'wpChosenAmdDefineStack' ), false );
 
-test( 'restores the absence of an AMD loader', () => {
-	const current = runtime();
+const withoutLoader = runtime();
 
-	executeChosen( current );
+executeChosen( withoutLoader );
 
-	assert.equal( typeof current.jQuery.fn.chosen, 'function' );
-	assert.equal( Object.hasOwn( current.window, 'define' ), false );
-	assert.equal( Object.hasOwn( current.window, 'wpChosenAmdDefineStack' ), false );
-} );
+assert.equal( typeof withoutLoader.jQuery.fn.chosen, 'function' );
+assert.equal( Object.hasOwn( withoutLoader.window, 'define' ), false );
+assert.equal( Object.hasOwn( withoutLoader.window, 'wpChosenAmdDefineStack' ), false );
+
+console.log( 'Chosen registers globally and restores the original AMD loader state.' );
