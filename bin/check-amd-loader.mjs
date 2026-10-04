@@ -22,11 +22,12 @@ function runtime( defineState = null ) {
 	jQuery.fn = {};
 
 	const window = { jQuery };
+	window.window = window;
 	if ( defineState ) {
 		window.define = defineState;
 	}
 
-	return { context: vm.createContext( { window } ), jQuery, window };
+	return { context: vm.createContext( window ), jQuery, window };
 }
 
 function executeChosen( current ) {
@@ -35,13 +36,17 @@ function executeChosen( current ) {
 	vm.runInContext( inlineScript( 'after' ), current.context );
 }
 
-const define = function() {};
+let defineCalls = 0;
+const define = function() {
+	defineCalls += 1;
+};
 define.amd = {};
 const withLoader = runtime( define );
 
 executeChosen( withLoader );
 
 assert.equal( typeof withLoader.jQuery.fn.chosen, 'function' );
+assert.equal( defineCalls, 0 );
 assert.strictEqual( withLoader.window.define, define );
 assert.equal( Object.hasOwn( withLoader.window, 'define' ), true );
 assert.equal( Object.hasOwn( withLoader.window, 'wpChosenAmdDefineStack' ), false );
