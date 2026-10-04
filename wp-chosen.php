@@ -13,7 +13,7 @@
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Tested up to:      7.1
- * Version:           6.3.1
+ * Version:           6.4.0
  */
 
 // Exit if accessed directly
@@ -59,5 +59,5 @@ function wp_chosen_get_plugin_url() {
 function wp_chosen_get_asset_version() {
 	return defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG
 		? time()
-		: 202609140001;
+		: 202610040001;
 }
