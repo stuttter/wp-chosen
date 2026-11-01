@@ -29,7 +29,7 @@
 		"> 2%"
 	],
 	"devDependencies": {
-		"autoprefixer": "^10.6.1",
+		"autoprefixer": "^10.6.2",
 		"cssnano": "^9.1.1",
 		"postcss": "^8.5.23",
 		"postcss-advanced-variables": "^5.0.0",
